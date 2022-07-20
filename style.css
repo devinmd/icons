@@ -1,0 +1,95 @@
+:root {
+  --bg1: #17191e;
+  --bg2: #1c1d23;
+  --bg3: #212228;
+  --bg4: #25262c;
+  --bg5: #282930;
+  --text1: #606472;
+  --text2: #4e525e;
+  --text3: #3f424c;
+  --text4: #34363d;
+  --green: #009966;
+  --selectionGreen: #64a684;
+  --yellow: #f0be61;
+  --blue: #4a73db;
+  --red: #bf2d4b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica;
+  margin: 0;
+  background-color: var(--bg2);
+}
+
+#topnav {
+  width: 100%;
+  height: 64px;
+  background-color: var(--bg1);
+}
+
+#main {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+}
+
+#sidenav {
+  background-color: var(--bg1);
+  flex-shrink: 0;
+  width: 240px;
+}
+
+#content {
+  width: 100%;
+  flex-wrap: wrap;
+  padding: 24px;
+  display: flex;
+}
+
+#footer {
+  width: 100%;
+  height: 64px;
+  background-color: var(--bg1);
+}
+
+.svgbox {
+  text-align: center;
+  display: inline-flex;
+  padding: 16px;
+  background-color: var(--bg3);
+  box-shadow: 0 0 0 1px var(--bg1);
+  transition: 100ms;
+  width: 48px;
+  height: 48px;
+  border: 1px solid transparent;
+  border-top: 1px solid var(--bg4);
+  border-radius: 4px;
+  margin: 8px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.svgbox p {
+  margin: 4px 0 0 0;
+  width: 100%;
+  font-size: 12px;
+  letter-spacing: 0.3px;
+  user-select: none;
+  color: #9e9e9e;
+}
+
+.svgbox img {
+  height: 24px;
+  width: 24px;
+  user-select: none;
+}
+.svgbox:hover {
+  border: 1px solid var(--green);
+  box-shadow: 0 0 0 1px var(--green);
+}

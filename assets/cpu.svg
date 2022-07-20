@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" stroke='#009966' stroke-width="32px" stroke-linecap="round" stroke-linejoin="round" fill="none">
+  <rect transform="matrix(0, 1, -1, 0, 460, -59.998993)" x="129.999" y="130" width="260" height="260" rx="24" ry="24"></rect>
+  <path d="M 362.445 208.641 L 362.445 251.36" transform="matrix(0, 1, -1, 0, 592.445496, -132.444504)"></path>
+  <path d="M 362.428 269.821 L 362.428 312.54" transform="matrix(0, 1, -1, 0, 653.608521, -71.247498)"></path>
+  <path d="M 362.428 89.821 L 362.428 132.54" transform="matrix(0, 1, -1, 0, 473.60849, -251.247513)"></path>
+  <path d="M 38.026 208.132 L 38.026 251.867" transform="matrix(0, 1, -1, 0, 268.025513, 191.973495)"></path>
+  <path d="M 38.009 269.312 L 38.009 313.047" transform="matrix(0, 1, -1, 0, 329.188507, 253.170502)"></path>
+  <path d="M 38.009 89.313 L 38.009 133.048" transform="matrix(0, 1, -1, 0, 149.189499, 73.171509)"></path>
+  <path d="M 170 15.4 L 170 57.621"></path>
+  <path d="M 290 15.417 L 290 57.638"></path>
+  <path d="M 110 15.417 L 110 57.638"></path>
+  <path d="M 170 341.559 L 170 384.431"></path>
+  <path d="M 290 341.577 L 290 384.448"></path>
+  <path d="M 110 341.577 L 110 384.448"></path>
+  <rect x="135" y="135" width="130" height="130" rx="8" ry="8" style=""></rect>
+  <path d="M 230 341.375 L 230 384.246"></path>
+  <path d="M 362.451 149.183 L 362.451 191.902" transform="matrix(0, 1, -1, 0, 532.993469, -191.908493)"></path>
+  <path d="M 229.852 15.491 L 229.852 57.712"></path>
+  <path d="M 37.835 148.4 L 37.835 192.135" transform="matrix(0, 1, -1, 0, 208.102493, 132.432495)"></path>
+</svg>

@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="400" height="400" viewBox="0 0 400 400" stroke='#009966' stroke-width="32px" stroke-linecap="round" stroke-linejoin="round" fill="none">
+
+
+
+400x400 canvas
+
+32 stroke width
+
+
+
+video file
+image file
+code file
+money file
+money bill
+new cpu
+gpu
+memory
+heart
+laptop
+
+
+battery
+monitor
+phone
+speaker
+file
+text file
+cpu
+credit card
+bug
