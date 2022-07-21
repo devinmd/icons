@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" stroke='#009966' stroke-width="36px" stroke-linecap="round" stroke-linejoin="round" fill="none">
+  <path d="M 72.819 199.986 L 192.819 199.464" data-bx-origin="1.001 1.532" transform="matrix(0.707107, -0.707107, 0.707107, 0.707107, -85.09729, 195.084351)"></path>
+  <path d="M 73.056 200.267 L 193.056 199.744" data-bx-origin="0.996906 -1.033458" transform="matrix(0.707107, 0.707107, -0.707107, 0.707107, 197.294205, -77.903313)"></path>
+  <path d="M 172.819 199.986 L 292.819 199.464" data-bx-origin="1.001 1.532" transform="matrix(0.707107, -0.707107, 0.707107, 0.707107, -55.807968, 265.795044)"></path>
+  <path d="M 173.056 200.267 L 293.056 199.744" data-bx-origin="0.996906 -1.033458" transform="matrix(0.707107, 0.707107, -0.707107, 0.707107, 226.583527, -148.613998)"></path>
+</svg>
