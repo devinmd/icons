@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Helvetica;
+  margin: 0;
+  height: 100%;
+  background-color: var(--bg2);
+}
+
+#app {
+  height: 100%;
+}
+
+#topnav {
+  height: var(--topnavheight);
+  background-color: var(--bg1);
+}
+
+#sidenav {
+  background-color: var(--bg1);
+  height: 100%;
+  padding: var(--topnavheight) var(--sidenavpadding) var(--sidenavpadding)
+    var(--sidenavpadding);
+  width: var(--sidenavwidth);
+  position: fixed;
+}
+
+#content {
+  height: 100%;
+  display: flex;
+  gap: 16px;
+  padding: 32px;
+  background-color: var(--bg2);
+  margin-left: calc(var(--sidenavwidth) + var(--sidenavpadding) * 2);
+}
+
+.pad {
+  padding: 16px;
+}
+
+.box {
+  background-color: var(--bg3);
+  box-shadow: 0 0 0 1px var(--bg1);
+  border: 1px solid transparent;
+  border-radius: 6px;
+  vertical-align: top;
+  display: inline-block;
+  border-top: 1px solid var(--bg4);
+}
+
+.chip {
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 14px;
+  padding: 1px 8px;
+  border: 1px solid transparent;
+}
+
+.box-title {
+  color: var(--text1);
+  font-size: 20px;
+  margin-bottom: 8px;
+}
+
+.box-text {
+  color: var(--text3);
+  font-size: 16px;
+}
+
+.chip.green {
+  background-color: var(--greentransparent);
+  color: var(--green);
+}
+
+.chip.green.border {
+  border: 1px solid var(--green);
+}
+
+.chip.yellow {
+  background-color: var(--yellowtransparent);
+  color: var(--yellow);
+}
+
+.chip.yellow.border {
+  border: 1px solid var(--yellow);
+}
+
+.chip.blue {
+  background-color: var(--bluetransparent);
+  color: var(--blue);
+}
+
+.chip.blue.border {
+  border: 1px solid var(--blue);
+}
+
+.chip.red {
+  background-color: var(--redtransparent);
+  color: var(--red);
+}
+
+.chip.red.border {
+  border: 1px solid var(--red);
+}
+
+.chip.default {
+  background-color: transparent;
+  color: var(--bg5);
+}

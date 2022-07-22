@@ -1,55 +1,26 @@
 :root {
-  --bg1: #0f1014;
+  --bg1: #0E0F11;
   --bg2: #131519;
-  --bg3: #18191e;
-  --bg4: #1d1e23;
-  --bg5: #222328;
+  --bg3: #191B1E;
+  --bg4: #1E2023;
+  --bg5: #232528;
   --text1: #696b74;
   --text2: #555860;
   --text3: #46484f;
   --text4: #3a3c40;
   --green: #009966;
-  --selectionGreen: #64a684;
+  --greentransparent: #0099661a;
   --yellow: #efba56;
+  --yellowtransparent: #efba561a;
   --blue: #4a73db;
+  --bluetransparent: #4a73db1a;
   --red: #bf2d4b;
+  --redtransparent: #bf2d4b1a;
+  --sidenavwidth: 200px;
+  --sidenavpadding: 16px;
+  --topnavheight: 64px;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: Helvetica;
-  margin: 0;
-  background-color: var(--bg2);
-}
-
-#topnav {
-  width: 100%;
-  height: 64px;
-  background-color: var(--bg1);
-}
-
-#main {
-  display: flex;
-  flex-direction: row;
-  width: 100%;
-  height: 100%;
-}
-
-#sidenav {
-  background-color: var(--bg1);
-  height: 100vw;
-  flex-shrink: 0;
-  width: 240px;
-}
-
-#content {
-  width: 100%;
-  padding: 32px;
-}
 
 #iconcontainer {
   width: 100%;
@@ -58,14 +29,7 @@ body {
   display: flex;
 }
 
-#footer {
-  width: 100%;
-  height: 64px;
-  background-color: var(--bg1);
-}
-
 #mainIconSearch {
-  border-radius: 8px;
   padding: 12px 16px;
   width: calc(100% - 32px);
   margin-bottom: 32px;
@@ -78,22 +42,12 @@ body {
   color: var(--text3);
 }
 
-.svgbox,
-#mainIconSearch {
-  background-color: var(--bg3);
-  box-shadow: 0 0 0 1px var(--bg1);
-  border: 1px solid transparent;
-  border-top: 1px solid var(--bg4);
-}
-
 .svgbox {
   text-align: center;
   display: inline-flex;
-  padding: 16px;
   transition: 100ms;
   width: 48px;
   height: 48px;
-  border-radius: 4px;
   justify-content: center;
   flex-wrap: wrap;
 }

@@ -1,200 +1,52 @@
-var batteryTags = [
-  "power",
-  "charge",
-  "battery",
-  "electronnic",
-  "electricity",
-  "computer",
-  "energy",
-  "charger",
-  "charging",
-];
+// vars
+var iconcontainer = document.querySelector("#iconcontainer");
 
-var icons = [
-  {
-    name: "CPU",
-    src: "cpu",
-    tags: ["cpu", "computer", "pc", "electronics", "processing"],
-  },
-  {
-    name: "Monitor",
-    src: "monitor",
-    tags: ["monitor", "tv", "display", "computer", "pc"],
-  },
-  { name: "File", src: "file", tags: ["file", "document"] },
-  {
-    name: "Text File",
-    src: "file_text",
-    tags: ["file", "text", "document", "text file"],
-  },
-  {
-    name: "Credit Card",
-    src: "creditcard",
-    tags: [
-      "payment",
-      "pay",
-      "card",
-      "credit",
-      "creditcard",
-      "credit card",
-      "money",
-      "bank",
-    ],
-  },
-  {
-    name: "Speaker",
-    src: "speaker",
-    tags: ["sound", "audio", "noise", "speaker"],
-  },
-  {
-    name: "Bug",
-    src: "bug",
-    tags: [
-      "bug",
-      "insect",
-      "programming",
-      "debug",
-      "debugging",
-      "critter",
-      "roach",
-      "beatle",
-      "coding",
-      "develop",
-      "developing",
-      "developer",
-      "programmer",
-      "issue",
-      "problem",
-    ],
-  },
-  {
-    name: "Bug Circle",
-    src: "bug_circle",
-    tags: [
-      "bug",
-      "insect",
-      "circle",
-      "programming",
-      "debug",
-      "debugging",
-      "critter",
-      "roach",
-      "beatle",
-      "coding",
-      "develop",
-      "developing",
-      "developer",
-      "programmer",
-      "issue",
-      "problem",
-    ],
-  },
-  { name: "Phone", src: "phone", tags: ["phone", "iphone", "mobile"] },
-  {
-    name: "Battery 100%",
-    src: "battery/battery100",
-    tags: batteryTags,
-  },
-  {
-    name: "Battery 75%",
-    src: "battery/battery75",
-    tags: batteryTags,
-  },
-  {
-    name: "Battery 50%",
-    src: "battery/battery50",
-    tags: batteryTags,
-  },
-  {
-    name: "Battery 25%",
-    src: "battery/battery25",
-    tags: batteryTags,
-  },
-  {
-    name: "Battery 10%",
-    src: "battery/battery10",
-    tags: batteryTags,
-  },
-  {
-    name: "Battery",
-    src: "battery/battery",
-    tags: batteryTags,
-  },
-  {
-    name: "Clock",
-    src: "clock",
-    tags: ["clock", "time"],
-  },
-  {
-    name: "RAM",
-    src: "ram",
-    tags: ["ram", "memory", "computer", "pc", "electronics"],
-  },
-  {
-    name: "X",
-    src: "x",
-    tags: ["x", "close", "exit", "cross", "no", "cancel", "none", "error"],
-  },
-  {
-    name: "X Circle",
-    src: "x_circle",
-    tags: [
-      "x",
-      "close",
-      "exit",
-      "cross",
-      "no",
-      "cancel",
-      "none",
-      "error",
-      "circle",
-    ],
-  },
-  {
-    name: "Arrow",
-    src: "arrows/arrow1",
-    tags: ["arrow"],
-  },
-  {
-    name: "Caret 1",
-    src: "arrows/caret1",
-    tags: ["caret", "arrow"],
-  },
-  {
-    name: "Caret 2",
-    src: "arrows/caret2",
-    tags: ["caret", "arrow"],
-  },
-  {
-    name: "Caret 1 Double",
-    src: "arrows/caret3",
-    tags: ["caret", "arrow"],
-  },
-  {
-    name: "Caret 2 Double",
-    src: "arrows/caret4",
-    tags: ["caret", "arrow"],
-  },
-  {
-    name: "Slider",
-    src: "slider",
-    tags: ["slider", "toggle", "switch", "input"],
-  },
-  {
-    name: "Mouse",
-    src: "mouse",
-    tags: [
-      "mouse",
-      "pointer",
-      "click",
-      "device",
-      "computer",
-      "peripheral",
-      "pc",
-      "button",
-      "input",
-      "cursor",
-      "point",
-    ],
-  },
-];
+function init() {
+  // sort icons list
+  icons.sort(function (a, b) {
+    var textA = a.name.toUpperCase();
+    var textB = b.name.toUpperCase();
+    return textA < textB ? -1 : textA > textB ? 1 : 0;
+  });
+
+  // generate icon boxes
+  generate();
+}
+
+// generate icon boxes
+function generate() {
+  for (let i = 0; i < icons.length; i++) {
+    // for each icon
+    let div = createElement("div", { class: "svgbox box pad" });
+    let img = createElement("img", { src: `icons/${icons[i].src}.svg` });
+    let name = createElement("p", { innerhtml: icons[i].name });
+
+    //
+    div.append(img);
+    div.append(name);
+    iconcontainer.append(div);
+  }
+}
+
+// search
+function iconSearch(query) {
+  query = query.toLowerCase();
+  for (let i = 0; i < icons.length; i++) {
+    // hide all icons
+    document.querySelectorAll(".svgbox")[i].style.display = "none";
+  }
+
+  for (let i = 0; i < icons.length; i++) {
+    for (let t = 0; t < icons[i]["tags"].length; t++) {
+      if (icons[i]["tags"][t].includes(query)) {
+        // match
+        // condition: if any tags contain the query string inside
+        console.log(icons[i]["tags"][t]);
+        document.querySelectorAll(".svgbox")[i].style.display = null;
+      }
+    }
+  }
+}
+
+// start
+init();
