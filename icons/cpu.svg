@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 400 400" stroke='#009966' stroke-width="36px" stroke-linecap="round" stroke-linejoin="round" fill="none">
-  <rect transform="matrix(0, 1, -1, 0, 457.283997, -57.283005)" x="128.641" y="128.642" width="257.284" height="257.284" rx="24" ry="24"></rect>
+  <rect transform="matrix(0, 1, -1, 0, 457.283997, -57.283005)" x="128.641" y="128.642" width="257.284" height="257.284" rx="36" ry="36"></rect>
   <path d="M 360.177 207.505 L 360.177 250.482" transform="matrix(0, 1, -1, 0, 589.170532, -131.183502)"></path>
   <path d="M 360.16 269.054 L 360.16 312.03" transform="matrix(0, 1, -1, 0, 650.702026, -69.618011)"></path>
   <path d="M 360.16 87.97 L 360.16 130.946" transform="matrix(0, 1, -1, 0, 469.618011, -250.701996)"></path>

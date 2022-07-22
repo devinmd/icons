@@ -21,10 +21,10 @@ var icons = [
     src: "monitor",
     tags: ["monitor", "tv", "display", "computer", "pc"],
   },
-  { name: "File", src: "file", tags: ["file", "document"] },
+  { name: "File", src: "files/file", tags: ["file", "document"] },
   {
     name: "Text File",
-    src: "file_text",
+    src: "files/file_text",
     tags: ["file", "text", "document", "text file"],
   },
   {
@@ -55,13 +55,15 @@ var icons = [
       "programming",
       "debug",
       "debugging",
+      'computer',
       "critter",
       "roach",
-      "beatle",
+      "beetle",
       "coding",
       "develop",
       "developing",
       "developer",
+      'code',
       "programmer",
       "issue",
       "problem",
@@ -73,13 +75,15 @@ var icons = [
     tags: [
       "bug",
       "insect",
+      'computer',
       "circle",
       "programming",
       "debug",
+      'code',
       "debugging",
       "critter",
       "roach",
-      "beatle",
+      "beetle",
       "coding",
       "develop",
       "developing",
@@ -206,5 +210,72 @@ var icons = [
       "cursor",
       "point",
     ],
+  },
+  {
+    name: "Folder",
+    src: "folder",
+    tags: ["folder", "files", "directory", "library"],
+  },
+
+  {
+    name: "Shapes",
+    src: "shapes",
+    tags: [ "box","game", "games", "random", "shapes", 'items', 'blocks', 'things', 'block', 'triangle', 'diamond', 'square', 'circle'],
+  },
+  {
+    name: "Grid",
+    src: "grid",
+    tags: ["grid", "boxes", "chart", "sheet", 'block', 'blocks'],
+  },
+  {
+    name: "Columns",
+    src: "columns",
+    tags: ["boxes", 'box', 'column', 'columns'],
+  },
+  {
+    name: "Rows",
+    src: "rows",
+    tags: ["boxes", 'box', 'row', 'rows'],
+  },
+  {
+    name: "Tree",
+    src: "tree",
+    tags: ["tree"],
+  },
+  {
+    name: "Image",
+    src: "image",
+    tags: ["image", 'photo', 'photograph', 'picture', 'media'],
+  },
+
+  {
+    name: "Video",
+    src: "video",
+    tags: ["video", 'media'],
+  },
+
+
+  {
+    name: "Pen",
+    src: "pen",
+    tags: ["edit", 'pen', 'pencil', 'write'],
+  },
+
+  {
+    name: "Pen Edit",
+    src: "pen_edit",
+    tags: ["edit", 'pen', 'pencil', 'write'],
+  },
+
+  {
+    name: "User",
+    src: "user",
+    tags: ["user", 'account', 'person'],
+  },
+
+  {
+    name: "Oval",
+    src: "oval",
+    tags: ["oval"],
   },
 ];

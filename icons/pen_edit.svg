@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" stroke='#009966' stroke-width="36px" stroke-linecap="round" stroke-linejoin="round" fill="none">
+
+  <path d="M 18.034 337.562 L 58.068 246.616 L 58.472 247.02 L 275.785 29.707 C 289.844 15.648 312.638 15.648 326.697 29.707 C 340.756 43.766 340.756 66.56 326.697 80.619 L 109.317 297.999 L 108.887 297.569 L 18.034 337.562 Z" style="fill: rgb(216, 216, 216); stroke-width: 36px; stroke-linecap: round; stroke-linejoin: round; stroke: rgb(0, 153, 102); fill-opacity: 0;"></path>
+  <path style="fill: rgb(216, 216, 216); stroke-width: 36px; stroke: rgb(0, 153, 102); stroke-linecap: round;" d="M 96.597 382.567 L 381.668 382.806"></path>
+  <path style="fill: rgb(216, 216, 216); stroke-width: 36px; stroke: rgb(0, 153, 102); stroke-linecap: round;" d="M 72.243 257.876 L 131.062 256.568" transform="matrix(0.707107, 0.707107, -0.707107, 0.707107, 211.656754, 3.45941)"></path>
+</svg>

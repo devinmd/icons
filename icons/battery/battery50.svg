@@ -2,6 +2,6 @@
    
     <rect style=" fill: #009966; stroke-linecap: square; stroke-width: 0;" x="57.565" y="164.391" width="125.62" height="71.217"></rect>
     <path d="M 362.217 179.058 L 378.044 179.058 C 380.229 179.058 382 180.829 382 183.014 L 382 214.667 C 382 216.852 380.229 218.623 378.044 218.623 L 362.217 218.623 L 362.217 179.058 Z"></path>
-    <rect style="fill: none;" x="18" y="125.815" width="330.664" height="148.37" rx="24" ry="24"></rect>
+    <rect style="fill: none;" x="18" y="125.815" width="330.664" height="148.37" rx="36" ry="36"></rect>
     
     </svg>

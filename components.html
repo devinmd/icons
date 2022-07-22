@@ -12,31 +12,95 @@
   <body>
     <div id="app">
       <div id="sidenav">
-        <a href="icons.html">icons</a>
-        <a href="components.html">components</a>
+        <a href="icons.html"><img src="./assets/image.svg" />Icons</a>
+        <a class="active" href="components.html"
+          ><img src="./assets/shapes1.svg" />Components</a
+        >
+        <a href=""><img src="./assets/account.svg" />Account</a>
       </div>
 
       <div id="topnav"></div>
 
       <div id="content">
-        <div class="box pad">
-          <p class="box-title">Title</p>
-          <p class="box-text">text text text text text text text text<br>text text text text text text text</p>
+        <div class="flex-container">
+          <div class="box">
+            <div class="box-title">
+              <div
+                class="box-title-icon"
+                style="background-image: url('./assets/grid1.svg')"
+              ></div>
+              Box
+            </div>
+            <p class="box-text">
+              text text text text text text text text<br />text text text text
+              text text text
+            </p>
+            <p class="box-codeblock">
+              &lt;div class="box"&gt;<br />
+              &nbsp;&nbsp;&lt;div class="box-title"&gt;<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;div<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;class="box-title-icon"<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;style="background-image:
+              url('icon.svg')"<br />&nbsp;&nbsp;&nbsp;&nbsp;&gt;&lt;/div&gt;<br />
+              &nbsp;&nbsp;&nbsp;&nbsp;Box<br />&nbsp;&nbsp;&lt;/div&gt;<br />
+              &nbsp;&nbsp;&lt;p class="box-text"&gt;text&lt;/p&gt;<br />
+              &lt;/div&gt;
+            </p>
+          </div>
+          <div class="box">
+            <div class="box-title">
+              <div
+                class="box-title-icon"
+                style="background-image: url('./assets/tag1.svg')"
+              ></div>
+              Tag
+            </div>
+            <p class="box-text">Default</p>
+            <p class="tag green">Tag Green</p>
+            <p class="tag red">Tag Red</p>
+            <p class="tag yellow">Tag Yellow</p>
+            <p class="tag blue">Tag Blue</p>
+            <p class="box-codeblock">
+              &lt;p class="tag green"&gt;Tag&lt;/p&gt;
+            </p>
+            <p class="box-text">Border</p>
+            <p class="tag green border">Tag Green</p>
+            <p class="tag red border">Tag Red</p>
+            <p class="tag yellow border">Tag Yellow</p>
+            <p class="tag blue border">Tag Blue</p>
+            <p class="box-codeblock">
+              &lt;p class="tag green border"&gt;Tag&lt;/p&gt;
+            </p>
+            <p class="box-text">Icon</p>
+            <p class="tag green">
+              <img class="tag-icon" src="./assets/bug.svg" />Bug
+            </p>
+            <p class="tag yellow">
+              <img class="tag-icon" src="./assets/folder.svg" />Folder
+            </p>
+            <p class="tag blue">
+              <img class="tag-icon" src="./assets/user.svg" />Account
+            </p>
+            <p class="box-codeblock">
+              &lt;p class="tag green"&gt;<br />&nbsp;&nbsp;&lt;img
+              class="tag-icon" src="icon.svg" /&gt;<br />&nbsp;&nbsp;Tag<br />&lt;/p&gt;
+            </p>
+            <p class="box-text">Border & Icon</p>
+            <p class="tag green border">
+              <img class="tag-icon" src="./assets/bug.svg" />Bug
+            </p>
+            <p class="tag yellow border">
+              <img class="tag-icon" src="./assets/folder.svg" />Folder
+            </p>
+            <p class="tag blue border">
+              <img class="tag-icon" src="./assets/user.svg" />Account
+            </p>
+            <p class="box-codeblock">
+              &lt;p class="tag green border"&gt;<br />&nbsp;&nbsp;&lt;img
+              class="tag-icon" src="icon.svg" /&gt;<br />&nbsp;&nbsp;Tag<br />&lt;/p&gt;
+            </p>
+          </div>
         </div>
-        <div class="box pad">
-          <p class="box-title">Chip</p>
-          <p class="chip green">Chip Green</p>
-          <p class="chip red">Chip Red</p>
-          <p class="chip yellow">Chip Yellow</p>
-          <p class="chip blue">Chip Blue</p>
-          <br />
-          <br />
-          <p class="chip green border">Chip Green</p>
-          <p class="chip red border">Chip Red</p>
-          <p class="chip yellow border">Chip Yellow</p>
-          <p class="chip blue border">Chip Blue</p>
-        </div>
-       
       </div>
     </div>
 

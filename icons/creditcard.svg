@@ -1,8 +1,10 @@
 <svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 400 400" stroke='#009966' stroke-width="36px" stroke-linecap="round" stroke-linejoin="round" fill="none">
 
-  <rect x="18" y="83.977" width="364" height="232.047" rx="24" ry="24"></rect>
-  <path d="M 34.338 158.259 L 367.461 158.196" transform="matrix(0.999995, -0.00303, 0.00303, 0.999995, -0.478507, 0.609452)"></path>
-  <rect x="175.999" y="249" width="147.216" height="4"></rect>
-  <rect x="80.895" y="249" width="32" height="4"></rect>
+  
+<rect x="18" y="83.977" width="364" height="232.047" rx="36" ry="36"></rect>
+<path d="M 34.338 155.258 L 367.461 155.195" transform="matrix(0.999995, -0.00303, 0.00303, 0.999995, -0.469414, 0.609438)"></path>
+<rect x="194.264" y="-244" width="117.951" height="0.1" rx="0.1" ry="0.1" style="" transform="matrix(1, 0, 0, -1, 0, 0)"></rect>
+<rect x="89.895" y="244" width="36.008" height="0.224" rx="0.1" ry="0.1" style=""></rect>
+
 
 </svg>

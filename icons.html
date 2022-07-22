@@ -14,18 +14,23 @@
   <div id="app">
 
     <div id="sidenav">
-      <a href="icons.html">icons</a>
-      <a href="components.html">components</a>
+      <a class="active" href="icons.html"><img src="./assets/image1.svg" />Icons</a>
+      <a href="components.html"
+        ><img src="./assets/shapes.svg" />Components</a
+      >
+      <a href=""><img src="./assets/account.svg" />Account</a>
     </div>
+
 
     <div id="topnav"></div>
 
     <div id="content">
-        <input type="text" id="mainIconSearch" class="box pad" oninput="iconSearch(this.value)" placeholder="Search...">
-      <div id="iconcontainer"></div>
+        <input type="text" id="mainIconSearch" class="box" oninput="iconSearch(this.value)" placeholder="Search...">
+      <div id="iconcontainer">
+        <p id="noMatchingIcons" style="display: none;">No Matching Icons</p>
+      </div>
     </div>
 
-  </div>
 
   <script src="script.js"></script>
   <script src="iconmap.js"></script>
