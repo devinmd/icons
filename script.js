@@ -1,10 +1,3 @@
-//
-
-function init() {
-  //
-}
-
-init();
 
 
 

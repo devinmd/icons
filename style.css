@@ -10,15 +10,19 @@
   width: calc(100% - 32px);
   margin-bottom: 32px;
   font-size: 16px;
+  transition: 100ms;
   color: var(--text1);
   outline: none;
+}
+
+#mainIconSearch:focus {
+  border: 1px solid var(--green);
+  box-shadow: 0 0 0 1px var(--green);
 }
 
 #mainIconSearch::placeholder {
   color: var(--text4);
 }
-
-
 
 .svgbox {
   text-align: center;
@@ -40,8 +44,8 @@
 }
 
 .svgbox img {
-  height: 24px;
-  width: 24px;
+  height: 20px;
+  width: 20px;
   user-select: none;
 }
 
@@ -50,33 +54,47 @@
   box-shadow: 0 0 0 1px var(--green);
 }
 
-#sidenav a {
+#sidenav .sidenavbtn {
   border-radius: 6px;
   text-decoration: none;
   padding: 8px 12px;
   color: var(--text2);
   cursor: default;
   display: block;
+  font-size: 16px;
 }
 
-#sidenav a:hover{
+#sidenav .sidenavbtnchild {
+  border-radius: 6px;
+  text-decoration: none;
+  font-size: 14px;
+  padding: 6px 12px;
+  color: var(--text2);
+  cursor: default;
+  display: block;
+}
+
+#sidenav .sidenavbtnchild:hover {
   background-color: var(--bg2);
 }
 
-#sidenav a.active {
+#sidenav .sidenavbtn:hover {
+  background-color: var(--bg2);
+}
+
+#sidenav .sidenavbtn.active {
   background-color: var(--green);
   color: #cecece;
 }
 
-#sidenav a img {
+#sidenav .sidenavbtn img {
   width: 16px;
   margin-right: 8px;
   transform: translateY(2px);
 }
 
-#noMatchingIcons {
-  text-align: center;
-  color: var(--bg4);
-  width: 100%;
-  font-size: 24px;
+#sidenav .sidenavbtnchild img {
+  width: 12px;
+  margin-right: 8px;
+  transform: translateY(1px);
 }

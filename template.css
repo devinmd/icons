@@ -10,6 +10,7 @@
   --text4: #3a3c40;
   --text5: #303236;
   --green: #009966;
+  --selectionGreen: #0099662f;
   --greentransparent: #0099661a;
   --yellow: #efba56;
   --yellowtransparent: #efba561a;
@@ -25,6 +26,10 @@
 * {
   margin: 0;
   padding: 0;
+}
+
+::selection {
+  background: var(--selectionGreen);
 }
 
 body {
@@ -69,6 +74,11 @@ body {
   vertical-align: top;
   display: inline-block;
   border-top: 1px solid var(--bg4);
+}
+
+.box.highlight {
+  border: 1px solid var(--green);
+  box-shadow: 0 0 0 1px var(--green);
 }
 
 .tag {
@@ -127,7 +137,7 @@ body {
   border: 1px solid var(--red);
 }
 
-.tag-icon {
+.icon-tag {
   vertical-align: text-bottom;
   height: 12px;
   width: 12px;
@@ -146,11 +156,13 @@ body {
   margin: 8px 0 12px 0;
   padding: 16px;
   color: var(--text3);
+  width: auto;
   border-radius: 8px;
-  font-family: "Courier New", Courier, monospace !important;
+  overflow-x: auto;
+  font-family: Consolas, "Courier New", Courier, monospace !important;
 }
 
-.box-title-icon {
+.icon-circular {
   height: 32px;
   width: 32px;
   background-position: center;

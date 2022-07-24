@@ -12,8 +12,10 @@ function init() {
   // url params
   let params = new URLSearchParams(document.location.search);
 
-  // generate icon boxes
-  generate();
+  // generate all icons
+  for (let i = 0; i < icons.length; i++) {
+    generate(icons[i]);
+  }
 
   // do search from url params
   if (params.get("search")) {
@@ -23,51 +25,75 @@ function init() {
   }
 }
 
-// generate icon boxes
-function generate() {
-  for (let i = 0; i < icons.length; i++) {
-    // for each icon
-    let div = createElement("div", { class: "svgbox box" });
-    let img = createElement("img", { src: `icons/${icons[i].src}.svg` });
-    let name = createElement("p", { innerhtml: icons[i].name });
-
-    //
-    div.append(img);
-    div.append(name);
-    iconcontainer.append(div);
-  }
+// generate icon box from icon list
+function generate(icon) {
+  let div = createElement("div", { class: "svgbox box" });
+  let img = createElement("img", { src: `../svgs/${icon.src}.svg` });
+  let name = createElement("p", { innerhtml: icon.name });
+  div.append(img);
+  div.append(name);
+  iconcontainer.append(div);
 }
 
 // search
 function iconSearch(query) {
-  query = query.toLowerCase();
+  document.querySelector('#mainIconSearch').value = query
+  document.title = "Icons - " + query
+  query = query.toLowerCase().replace(/ /g, "");
   window.history.pushState("", "", `?search=${query}`);
 
-  for (let i = 0; i < icons.length; i++) {
-    // hide all icons
-    document.querySelectorAll(".svgbox")[i].style.display = "none";
-    document.querySelector("#noMatchingIcons").style.display = null;
-  }
 
+  let queryArr = query.split(",");
+
+  console.log(queryArr);
+
+  // unused atm
   let count = 0;
 
+  // remove all displayed icons
+  iconcontainer.innerHTML = "";
+
+  // if it's a match, generate that icon
   for (let i = 0; i < icons.length; i++) {
-    for (let t = 0; t < icons[i]["tags"].length; t++) {
-      if (icons[i]["tags"][t].includes(query)) {
-        // match
-        // condition: if any tags contain the query string inside
-        document.querySelectorAll(".svgbox")[i].style.display = null;
-        document.querySelector("#noMatchingIcons").style.display = "none";
-        count += 1;
+    // for each icon
+    if (queryArr[0] == "") {
+      generate(icons[i]);
+    } else {
+      eachtag: for (let t = 0; t < icons[i]["tags"].length; t++) {
+        // for each tag
+        for (let q = 0; q < queryArr.length; q++) {
+          if (queryArr[q] != "") {
+            // if isn't empty
+            if (icons[i]["tags"][t].includes(queryArr[q])) {
+              generate(icons[i]);
+              console.log(
+                query +
+                  " : " +
+                  icons[i]["name"] +
+                  " (" +
+                  icons[i]["tags"][t] +
+                  ")"
+              );
+              count += 1;
+
+              // break out of both loops to not get duplicate icons
+              break eachtag;
+            }
+          }
+        }
       }
     }
   }
-  if(count == 0){
-    // no matches
-    document.querySelector("#noMatchingIcons").style.display = null;
-
-  }
 }
 
-// start
+
+document.addEventListener("keyup", function(e) {
+	e = e || window.event;
+	// Add scripts here
+  if(e.key == '/'){
+    // focus search box
+    document.querySelector('#mainIconSearch').focus()
+  }
+});
+
 init();

@@ -1,109 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Project</title>
-    <link rel="stylesheet" href="template.css" />
-    <link rel="stylesheet" href="style.css" />
-  </head>
 
-  <body>
-    <div id="app">
-      <div id="sidenav">
-        <a href="icons.html"><img src="./assets/image.svg" />Icons</a>
-        <a class="active" href="components.html"
-          ><img src="./assets/shapes1.svg" />Components</a
-        >
-        <a href=""><img src="./assets/account.svg" />Account</a>
-      </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Components</title>
+  <link rel="stylesheet" href="./template.css" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
 
-      <div id="topnav"></div>
+<body>
+  <div id="app">
 
-      <div id="content">
-        <div class="flex-container">
-          <div class="box">
-            <div class="box-title">
-              <div
-                class="box-title-icon"
-                style="background-image: url('./assets/grid1.svg')"
-              ></div>
-              Box
-            </div>
-            <p class="box-text">
-              text text text text text text text text<br />text text text text
-              text text text
-            </p>
-            <p class="box-codeblock">
-              &lt;div class="box"&gt;<br />
-              &nbsp;&nbsp;&lt;div class="box-title"&gt;<br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&lt;div<br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;class="box-title-icon"<br />
-              &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;style="background-image:
-              url('icon.svg')"<br />&nbsp;&nbsp;&nbsp;&nbsp;&gt;&lt;/div&gt;<br />
-              &nbsp;&nbsp;&nbsp;&nbsp;Box<br />&nbsp;&nbsp;&lt;/div&gt;<br />
-              &nbsp;&nbsp;&lt;p class="box-text"&gt;text&lt;/p&gt;<br />
-              &lt;/div&gt;
-            </p>
+    <!-- sidenav -->
+    <div id="sidenav">
+      <!-- home -->
+      <a href="/index.html" class="sidenavbtn"><img src="./assets/boxes.svg" />Home</a>
+      <!-- icons -->
+      <a href="/icons.html" class="sidenavbtn"><img src="./assets/image.svg" />Icons</a>
+      <!-- components -->
+      <a href="/components.html" class="sidenavbtn active"><img src="./assets/shapes1.svg" />Components</a>
+    </div>
+
+    <!-- topnav -->
+    <div id="topnav"></div>
+
+    <div id="content">
+      <div class="flex-container">
+        <div class="box">
+          <div class="box-title">
+            <div class="icon-circular" style="background-image: url('./assets/boxes1.svg')"></div>Box
           </div>
-          <div class="box">
-            <div class="box-title">
-              <div
-                class="box-title-icon"
-                style="background-image: url('./assets/tag1.svg')"
-              ></div>
-              Tag
-            </div>
-            <p class="box-text">Default</p>
-            <p class="tag green">Tag Green</p>
-            <p class="tag red">Tag Red</p>
-            <p class="tag yellow">Tag Yellow</p>
-            <p class="tag blue">Tag Blue</p>
-            <p class="box-codeblock">
-              &lt;p class="tag green"&gt;Tag&lt;/p&gt;
-            </p>
-            <p class="box-text">Border</p>
-            <p class="tag green border">Tag Green</p>
-            <p class="tag red border">Tag Red</p>
-            <p class="tag yellow border">Tag Yellow</p>
-            <p class="tag blue border">Tag Blue</p>
-            <p class="box-codeblock">
-              &lt;p class="tag green border"&gt;Tag&lt;/p&gt;
-            </p>
-            <p class="box-text">Icon</p>
-            <p class="tag green">
-              <img class="tag-icon" src="./assets/bug.svg" />Bug
-            </p>
-            <p class="tag yellow">
-              <img class="tag-icon" src="./assets/folder.svg" />Folder
-            </p>
-            <p class="tag blue">
-              <img class="tag-icon" src="./assets/user.svg" />Account
-            </p>
-            <p class="box-codeblock">
-              &lt;p class="tag green"&gt;<br />&nbsp;&nbsp;&lt;img
-              class="tag-icon" src="icon.svg" /&gt;<br />&nbsp;&nbsp;Tag<br />&lt;/p&gt;
-            </p>
-            <p class="box-text">Border & Icon</p>
-            <p class="tag green border">
-              <img class="tag-icon" src="./assets/bug.svg" />Bug
-            </p>
-            <p class="tag yellow border">
-              <img class="tag-icon" src="./assets/folder.svg" />Folder
-            </p>
-            <p class="tag blue border">
-              <img class="tag-icon" src="./assets/user.svg" />Account
-            </p>
-            <p class="box-codeblock">
-              &lt;p class="tag green border"&gt;<br />&nbsp;&nbsp;&lt;img
-              class="tag-icon" src="icon.svg" /&gt;<br />&nbsp;&nbsp;Tag<br />&lt;/p&gt;
-            </p>
+          <p class="box-text">this is a box with a title, text, and a title icon.</p>
+          <p class="box-codeblock">
+            &lt;div class="box"&gt;<br />
+            &nbsp;&nbsp;&lt;div class="box-title"&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;class="icon-circular"<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;style="background-image:
+            url('icon.svg')"<br />&nbsp;&nbsp;&nbsp;&nbsp;&gt;&lt;/div&gt;<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;Box<br />&nbsp;&nbsp;&lt;/div&gt;<br />
+            &nbsp;&nbsp;&lt;p class="box-text"&gt;text&lt;/p&gt;<br />
+            &lt;/div&gt;
+          </p>
+        </div>
+        <div class="box">
+          <div class="box-title">
+            <div class="icon-circular" style="background-image: url('./assets/image1.svg')"></div>Icons
           </div>
+          <p class="box-text">Circular icons</p>
+          <div class="icon-circular" style="background-image: url('./assets/shapes1.svg')"></div>
+          <div class="icon-circular" style="background-image: url('./assets/shapes1.svg')"></div>
+          <div class="icon-circular" style="background-image: url('./assets/shapes1.svg')"></div>
+          <p class="box-codeblock">
+            &lt;div<br>&nbsp;&nbsp;class="icon-circular"<br>&nbsp;&nbsp;style="background-image: url('icon.svg')"<br>&gt;&lt;/div&gt;
+          </p>
+          <p class="box-text">Tag icons</p>
+          <p class="tag green">
+            <img class="icon-tag" src="./assets/shapescolor.svg" />Tag With Icon
+          </p>
+          <p class="box-codeblock">
+            &lt;p class="tag green"&gt;<br>
+            &nbsp;&nbsp;&lt;img class="icon-tag" src="icon.svg" /&gt;<br>&nbsp;&nbsp;Tag With Icon<br>
+            &lt;/p&gt; </p>
+        </div>
+        <div class="box">
+          <div class="box-title">
+            <div class="icon-circular" style="background-image: url('./assets/tag1.svg')"></div>
+            Tag
+          </div>
+          <p class="box-text">Default</p>
+          <p class="tag green">Tag Green</p>
+          <p class="tag red">Tag Red</p>
+          <p class="tag yellow">Tag Yellow</p>
+          <p class="tag blue">Tag Blue</p>
+          <p class="box-codeblock">
+            &lt;p class="tag green"&gt;Tag&lt;/p&gt;
+          </p>
+          <p class="box-text">Border</p>
+          <p class="tag green border">Tag Green</p>
+          <p class="tag red border">Tag Red</p>
+          <p class="tag yellow border">Tag Yellow</p>
+          <p class="tag blue border">Tag Blue</p>
+          <p class="box-codeblock">
+            &lt;p class="tag green border"&gt;Tag&lt;/p&gt;
+          </p>
+          <p class="box-text">Icon</p>
+          <p class="tag green">
+            <img class="icon-tag" src="./assets/bug.svg" />Bug
+          </p>
+          <p class="tag yellow">
+            <img class="icon-tag" src="./assets/foldercolor.svg" />Folder
+          </p>
+          <p class="tag blue">
+            <img class="icon-tag" src="./assets/user.svg" />Account
+          </p>
+          <p class="box-codeblock">
+            &lt;p class="tag green"&gt;<br />&nbsp;&nbsp;&lt;img
+            class="icon-tag" src="icon.svg" /&gt;<br />&nbsp;&nbsp;Tag<br />&lt;/p&gt;
+          </p>
+          <p class="box-text">Border & Icon</p>
+          <p class="tag green border">
+            <img class="icon-tag" src="./assets/bug.svg" />Bug
+          </p>
+          <p class="tag yellow border">
+            <img class="icon-tag" src="./assets/foldercolor.svg" />Folder
+          </p>
+          <p class="tag blue border">
+            <img class="icon-tag" src="./assets/user.svg" />Account
+          </p>
+          <p class="box-codeblock">
+            &lt;p class="tag green border"&gt;<br />&nbsp;&nbsp;&lt;img
+            class="icon-tag" src="icon.svg" /&gt;<br />&nbsp;&nbsp;Tag<br />&lt;/p&gt;
+          </p>
         </div>
       </div>
     </div>
+  </div>
+</body>
 
-    <script src="script.js"></script>
-  </body>
 </html>
