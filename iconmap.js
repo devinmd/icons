@@ -38,6 +38,23 @@ var icons = [
     src: "monitor",
     tags: ["monitor", "tv", "display", "computer", "pc", "device"],
   },
+  {
+    name: "Keyboard",
+    src: "keyboard",
+    tags: [
+      "keyboard",
+      "typing",
+      "keys",
+      "key",
+      "pc",
+      "device",
+      "computer",
+      "input",
+      "letters",
+      "character",
+      "characters",
+    ],
+  },
   { name: "File", src: "files_folder/file", tags: ["file", "document"] },
   {
     name: "Text File",
@@ -181,8 +198,85 @@ var icons = [
     ],
   },
   {
+    name: "App Window",
+    src: "app_window",
+    tags: ["app", "application", "window"],
+  },
+  {
+    name: "Arrow Circle",
+    src: "arrows/arrow_circle",
+    tags: ["arrow", "circle", "circular"],
+  },
+  {
+    name: "Arrows Up",
+    src: "arrows/arrows_up",
+    tags: ["arrow"],
+  },
+  {
+    name: "Arrows Up",
+    src: "arrows/arrows_up1",
+    tags: ["arrow"],
+  },
+  {
+    name: "Arrows Down",
+    src: "arrows/arrows_down",
+    tags: ["arrow"],
+  },
+  {
+    name: "Arrows Down",
+    src: "arrows/arrows_down1",
+    tags: ["arrow"],
+  },
+  {
+    name: "Arrows Right",
+    src: "arrows/arrows_right",
+    tags: ["arrow"],
+  },
+  {
+    name: "Arrows Opposite",
+    src: "arrows/arrows_left_right",
+    tags: ["arrow"],
+  },
+  {
+    name: "Arrows Opposite",
+    src: "arrows/arrows_up_down",
+    tags: ["arrow"],
+  },
+  {
+    name: "Arrows Left",
+    src: "arrows/arrows_left",
+    tags: ["arrow"],
+  },
+  {
+    name: "Arrows Right",
+    src: "arrows/arrows_right1",
+    tags: ["arrow"],
+  },
+  {
+    name: "Arrows Left",
+    src: "arrows/arrows_left1",
+    tags: ["arrow"],
+  },
+  {
+    name: "Arrows Inward",
+    src: "arrows/arrows_inward",
+    tags: ["arrow"],
+  },
+  {
+    name: "Arrows Outward",
+    src: "arrows/arrows_outward",
+    tags: ["arrow"],
+  },
+
+  {
     name: "Arrow",
     src: "arrows/arrow1",
+    tags: ["arrow"],
+  },
+
+  {
+    name: "Arrows Outward",
+    src: "arrows/arrows_outward1",
     tags: ["arrow"],
   },
   {
@@ -190,34 +284,22 @@ var icons = [
     src: "arrows/arrowlong1",
     tags: ["arrow"],
   },
+
   {
-    name: "Caret 1",
-    src: "arrows/caret1",
+    name: "Caret",
+    src: "arrows/caret",
     tags: ["caret", "arrow"],
   },
+
   {
-    name: "Caret 2",
-    src: "arrows/caret2",
+    name: "Caret Double",
+    src: "arrows/caret_double",
     tags: ["caret", "arrow"],
   },
+
   {
-    name: "Caret 1 Double",
-    src: "arrows/caret3",
-    tags: ["caret", "arrow"],
-  },
-  {
-    name: "Caret 2 Double",
-    src: "arrows/caret4",
-    tags: ["caret", "arrow"],
-  },
-  {
-    name: "Caret 1 Triple",
-    src: "arrows/caret5",
-    tags: ["caret", "arrow"],
-  },
-  {
-    name: "Caret 2 Triple",
-    src: "arrows/caret6",
+    name: "Caret Triple",
+    src: "arrows/caret_triple",
     tags: ["caret", "arrow"],
   },
   {
@@ -277,6 +359,27 @@ var icons = [
       "square",
       "circle",
     ],
+  },
+  {
+    name: "Plus",
+    src: "plus",
+    tags: ["plus", "add", "new"],
+  },
+
+  {
+    name: "Plus Circle",
+    src: "plus_circle",
+    tags: ["plus", "add", "new", "circle", "circular"],
+  },
+  {
+    name: "Asterisk",
+    src: "asterisk",
+    tags: ["star", "asterisk"],
+  },
+  {
+    name: "Box",
+    src: "box",
+    tags: ["box", "cube", "area", "empty", "block", "blocks", "boxes"],
   },
   {
     name: "Boxes",
@@ -409,6 +512,21 @@ var icons = [
     tags: ["circle", "circular"],
   },
   {
+    name: "Circle Circle",
+    src: "circle_circle",
+    tags: ["circle", "circular"],
+  },
+  {
+    name: "Square Circle",
+    src: "square_circle",
+    tags: ["circle", "circular", "square"],
+  },
+  {
+    name: "Square Circle",
+    src: "square_circle1",
+    tags: ["circle", "circular", "square"],
+  },
+  {
     name: "Play Circle",
     src: "play_circle",
     tags: ["circle", "play", "media", "video", "circular"],
@@ -421,26 +539,46 @@ var icons = [
   {
     name: "Align Left",
     src: "align_left",
-    tags: ["text", "left", "align"],
+    tags: ["left", "align"],
   },
   {
     name: "Align Right",
     src: "align_right",
+    tags: ["right", "align"],
+  },
+  {
+    name: "Align Top",
+    src: "align_top",
+    tags: ["top", "align"],
+  },
+  {
+    name: "Align Bottom",
+    src: "align_bottom",
+    tags: ["bottom", "align"],
+  },
+  {
+    name: "Align Left",
+    src: "text/align_left",
+    tags: ["text", "left", "align"],
+  },
+  {
+    name: "Align Right",
+    src: "text/align_right",
     tags: ["text", "right", "align"],
   },
   {
     name: "Align Center",
-    src: "align_center",
+    src: "text/align_center",
     tags: ["text", "center", "align"],
   },
   {
     name: "Align Justify",
-    src: "align_justify",
+    src: "text/align_justify",
     tags: ["text", "justify", "align"],
   },
   {
     name: "Text",
-    src: "text",
+    src: "text/text",
     tags: ["text", "words", "type", "typing"],
   },
 ];

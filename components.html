@@ -21,103 +21,119 @@
       <a href="/icons.html" class="sidenavbtn"><img src="./assets/image.svg" />Icons</a>
       <!-- components -->
       <a href="/components.html" class="sidenavbtn active"><img src="./assets/shapes1.svg" />Components</a>
+      <a href="#boxes" class="sidenavbtn"><img src="./assets/boxes.svg" />Boxes</a>
+
+      <a href="#icons" class="sidenavbtn"><img src="./assets/image.svg" />Icons</a>
+      <a href="#tags" class="sidenavbtn"><img src="./assets/oval.svg" />Tags</a>
+
     </div>
 
     <!-- topnav -->
     <div id="topnav"></div>
 
     <div id="content">
-      <div class="flex-container">
+      <div class="flex-container col-2">
+
+        <p class="heading">Components</p>
+        <a href="#colors" class="subheading">Colors</a>
+        <a href="#boxes" class="subheading">Boxes</a>
+
         <div class="box">
           <div class="box-title">
-            <div class="icon-circular" style="background-image: url('./assets/boxes1.svg')"></div>Box
+            <div class="icon-circular green" style="background-image: url('./assets/boxes1.svg')"></div>Box
           </div>
           <p class="box-text">this is a box with a title, text, and a title icon.</p>
-          <p class="box-codeblock">
+          <div class="box-codeblock">
             &lt;div class="box"&gt;<br />
             &nbsp;&nbsp;&lt;div class="box-title"&gt;<br />
             &nbsp;&nbsp;&nbsp;&nbsp;&lt;div<br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;class="icon-circular"<br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;class="icon-circular green"<br />
             &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;style="background-image:
             url('icon.svg')"<br />&nbsp;&nbsp;&nbsp;&nbsp;&gt;&lt;/div&gt;<br />
             &nbsp;&nbsp;&nbsp;&nbsp;Box<br />&nbsp;&nbsp;&lt;/div&gt;<br />
             &nbsp;&nbsp;&lt;p class="box-text"&gt;text&lt;/p&gt;<br />
             &lt;/div&gt;
-          </p>
+          </div>
         </div>
+        <a href="#icons" class="subheading">Icons</a>
         <div class="box">
           <div class="box-title">
-            <div class="icon-circular" style="background-image: url('./assets/image1.svg')"></div>Icons
+            <div class="icon-circular green" style="background-image: url('./assets/circle1.svg')"></div>Circular Icons
           </div>
-          <p class="box-text">Circular icons</p>
-          <div class="icon-circular" style="background-image: url('./assets/shapes1.svg')"></div>
-          <div class="icon-circular" style="background-image: url('./assets/shapes1.svg')"></div>
-          <div class="icon-circular" style="background-image: url('./assets/shapes1.svg')"></div>
+          <p class="box-text">Padded circular icons</p>
+          <div class="icon-circular green" style="background-image: url('./assets/shapes1.svg')"></div>
+          <div class="icon-circular red" style="background-image: url('./assets/house1.svg')"></div>
+          <div class="icon-circular yellow" style="background-image: url('./assets/folder.svg')"></div>
+          <div class="icon-circular blue" style="background-image: url('./assets/shapes1.svg')"></div>
           <p class="box-codeblock">
-            &lt;div<br>&nbsp;&nbsp;class="icon-circular"<br>&nbsp;&nbsp;style="background-image: url('icon.svg')"<br>&gt;&lt;/div&gt;
+            &lt;div<br>&nbsp;&nbsp;class="icon-circular green"<br>&nbsp;&nbsp;style="background-image: url('icon.svg')"<br>&gt;&lt;/div&gt;
           </p>
-          <p class="box-text">Tag icons</p>
-          <p class="tag green">
-            <img class="icon-tag" src="./assets/shapescolor.svg" />Tag With Icon
-          </p>
-          <p class="box-codeblock">
-            &lt;p class="tag green"&gt;<br>
-            &nbsp;&nbsp;&lt;img class="icon-tag" src="icon.svg" /&gt;<br>&nbsp;&nbsp;Tag With Icon<br>
-            &lt;/p&gt; </p>
         </div>
+        <a href="#tags" class="subheading">Tags</a>
         <div class="box">
           <div class="box-title">
-            <div class="icon-circular" style="background-image: url('./assets/tag1.svg')"></div>
-            Tag
+            <div class="icon-circular green" style="background-image: url('./assets/oval1.svg')"></div>Tag
           </div>
-          <p class="box-text">Default</p>
+          <p class="box-heading">Default</p>
+          <p class="box-text">Use font size to change size.</p>
           <p class="tag green">Tag Green</p>
-          <p class="tag red">Tag Red</p>
-          <p class="tag yellow">Tag Yellow</p>
-          <p class="tag blue">Tag Blue</p>
+          <p class="tag red" style="font-size: 16px;">Tag Red</p>
+          <p class="tag yellow" style="font-size: 18px;">Tag Yellow</p>
+          <p class="tag blue" style="font-size: 20px;">Tag Blue</p>
           <p class="box-codeblock">
-            &lt;p class="tag green"&gt;Tag&lt;/p&gt;
+            &lt;p class="tag green" style="font-size: 14px;"&gt;Tag&lt;/p&gt;
           </p>
-          <p class="box-text">Border</p>
+          <p class="box-heading">Border</p>
+          <p class="box-text">Use the border class.</p>
           <p class="tag green border">Tag Green</p>
-          <p class="tag red border">Tag Red</p>
-          <p class="tag yellow border">Tag Yellow</p>
-          <p class="tag blue border">Tag Blue</p>
+          <p class="tag red border" style="font-size: 16px;">Tag Red</p>
+          <p class="tag yellow border" style="font-size: 18px;">Tag Yellow</p>
+          <p class="tag blue border" style="font-size: 20px;">Tag Blue</p>
           <p class="box-codeblock">
-            &lt;p class="tag green border"&gt;Tag&lt;/p&gt;
+            &lt;p class="tag green border" style="font-size: 14px;"&gt;Tag&lt;/p&gt;
           </p>
-          <p class="box-text">Icon</p>
+          <p class="box-heading">Icon</p>
+          <p class="box-text">Use an img element with the class icon-tag and set the src attribute to your<br>image.</p>
+          <p class="box-text">You can move the img to wherever you want inside of the tag content.</p>
           <p class="tag green">
             <img class="icon-tag" src="./assets/bug.svg" />Bug
           </p>
-          <p class="tag yellow">
+          <p class="tag red" style="font-size: 16px;">
+            <img class="icon-tag" src="./assets/x_circle.svg" />Delete
+          </p>
+          <p class="tag yellow" style="font-size: 18px;">
             <img class="icon-tag" src="./assets/foldercolor.svg" />Folder
           </p>
-          <p class="tag blue">
+          <p class="tag blue" style="font-size: 20px;">
             <img class="icon-tag" src="./assets/user.svg" />Account
           </p>
           <p class="box-codeblock">
-            &lt;p class="tag green"&gt;<br />&nbsp;&nbsp;&lt;img
+            &lt;p class="tag green" style="font-size: 14px;"&gt;<br />&nbsp;&nbsp;&lt;img
             class="icon-tag" src="icon.svg" /&gt;<br />&nbsp;&nbsp;Tag<br />&lt;/p&gt;
           </p>
-          <p class="box-text">Border & Icon</p>
-          <p class="tag green border">
-            <img class="icon-tag" src="./assets/bug.svg" />Bug
+          <p class="box-heading">Border & Icon</p>
+          <p class="box-text">Border class and an icon on the right.</p>
+          <p class="tag green border">Bug
+            <img class="icon-tag" src="./assets/bug.svg" />
           </p>
-          <p class="tag yellow border">
-            <img class="icon-tag" src="./assets/foldercolor.svg" />Folder
+          <p class="tag red border" style="font-size: 16px;">Delete
+            <img class="icon-tag" src="./assets/x_circle.svg" />
           </p>
-          <p class="tag blue border">
-            <img class="icon-tag" src="./assets/user.svg" />Account
+          <p class="tag yellow border" style="font-size: 18px;">Folder
+            <img class="icon-tag" src="./assets/foldercolor.svg" />
+          </p>
+          <p class="tag blue border" style="font-size: 20px;">Account
+            <img class="icon-tag" src="./assets/user.svg" />
           </p>
           <p class="box-codeblock">
-            &lt;p class="tag green border"&gt;<br />&nbsp;&nbsp;&lt;img
-            class="icon-tag" src="icon.svg" /&gt;<br />&nbsp;&nbsp;Tag<br />&lt;/p&gt;
+            &lt;p class="tag green border" style="font-size: 14px;"&gt;<br />&nbsp;&nbsp;Tag<br />&nbsp;&nbsp;&lt;img
+            class="icon-tag" src="icon.svg" /&gt;<br>&lt;/p&gt;
           </p>
         </div>
       </div>
     </div>
   </div>
+  <script src="script.js"></script>
 </body>
 
 </html>

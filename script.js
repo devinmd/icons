@@ -1,6 +1,13 @@
-
-
-
+// listen for hash change
+window.addEventListener(
+  "hashchange",
+  function () {
+    // ? doesnt work ???
+    console.log(document.querySelector('a[href="'+this.location.hash+'"]'))
+    document.querySelector('a[href="'+this.location.hash+'"]').scrollTo({ behavior: "smooth" });
+  },
+  false
+);
 
 // helper functions
 function createElement(type, params) {

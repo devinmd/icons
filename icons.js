@@ -8,6 +8,8 @@ function init() {
     var textB = b.name.toUpperCase();
     return textA < textB ? -1 : textA > textB ? 1 : 0;
   });
+  // icon count
+  document.querySelector("#iconCount").innerHTML = icons.length + " Icons";
 
   // url params
   let params = new URLSearchParams(document.location.search);
@@ -37,11 +39,10 @@ function generate(icon) {
 
 // search
 function iconSearch(query) {
-  document.querySelector('#mainIconSearch').value = query
-  document.title = "Icons - " + query
+  document.querySelector("#mainIconSearch").value = query;
+  document.title = "Icons" + (query == "" ? "" : " - " + query);
   query = query.toLowerCase().replace(/ /g, "");
   window.history.pushState("", "", `?search=${query}`);
-
 
   let queryArr = query.split(",");
 
@@ -58,6 +59,7 @@ function iconSearch(query) {
     // for each icon
     if (queryArr[0] == "") {
       generate(icons[i]);
+      count += 1;
     } else {
       eachtag: for (let t = 0; t < icons[i]["tags"].length; t++) {
         // for each tag
@@ -66,15 +68,17 @@ function iconSearch(query) {
             // if isn't empty
             if (icons[i]["tags"][t].includes(queryArr[q])) {
               generate(icons[i]);
+              count += 1;
               console.log(
-                query +
-                  " : " +
-                  icons[i]["name"] +
-                  " (" +
+                count +
+                  ' - "' +
+                  query +
+                  '" : ' +
                   icons[i]["tags"][t] +
+                  " (" +
+                  icons[i]["name"] +
                   ")"
               );
-              count += 1;
 
               // break out of both loops to not get duplicate icons
               break eachtag;
@@ -84,15 +88,23 @@ function iconSearch(query) {
       }
     }
   }
+  console.log(query);
+  document.querySelector("#iconCount").innerHTML =
+    query == ""
+      ? count + " Icons"
+      : count +
+        (count == 1 ? " Icon" : " Icons") +
+        ' Matching "' +
+        query.replace(/,/g, '", "') +
+        '"';
 }
 
-
-document.addEventListener("keyup", function(e) {
-	e = e || window.event;
-	// Add scripts here
-  if(e.key == '/'){
+document.addEventListener("keyup", function (e) {
+  e = e || window.event;
+  // Add scripts here
+  if (e.key == "/") {
     // focus search box
-    document.querySelector('#mainIconSearch').focus()
+    document.querySelector("#mainIconSearch").focus();
   }
 });
 
