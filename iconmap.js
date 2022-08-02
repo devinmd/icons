@@ -286,6 +286,16 @@ var icons = [
   },
 
   {
+    name: "Caret Down",
+    src: "arrows/caretDown",
+    tags: ["caret", "arrow"],
+  },
+  {
+    name: "Caret Right",
+    src: "arrows/caretRight",
+    tags: ["caret", "arrow"],
+  },
+  {
     name: "Caret",
     src: "arrows/caret",
     tags: ["caret", "arrow"],
