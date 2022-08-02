@@ -95,6 +95,32 @@ var icons = [
   },
   {
     name: "Code",
+    src: "code2",
+    tags: [
+      "programming",
+      "coding",
+      "develop",
+      "developing",
+      "developer",
+      "code",
+      "programmer",
+    ],
+  },
+  {
+    name: "Code",
+    src: "code1",
+    tags: [
+      "programming",
+      "coding",
+      "develop",
+      "developing",
+      "developer",
+      "code",
+      "programmer",
+    ],
+  },
+  {
+    name: "Code",
     src: "code",
     tags: [
       "programming",
@@ -387,9 +413,34 @@ var icons = [
     tags: ["star", "asterisk"],
   },
   {
+    name: "Dot Grid",
+    src: "dot_grid",
+    tags: ['circles', 'circle', 'round', 'dots'],
+  },
+  {
+    name: "Present",
+    src: "present",
+    tags: ['gift', 'present', 'box'],
+  },
+  {
+    name: "Dots",
+    src: "dots",
+    tags: ['circles', 'circle', 'round', 'dots'],
+  },
+  {
+    name: "Circles",
+    src: "circles",
+    tags: ['circles', 'circle', 'round'],
+  },
+  {
     name: "Box",
     src: "box",
     tags: ["box", "cube", "area", "empty", "block", "blocks", "boxes"],
+  },
+  {
+    name: "Boxes Diagonal",
+    src: "boxes/boxes_diagonal",
+    tags: boxTags,
   },
   {
     name: "Boxes",
@@ -407,7 +458,22 @@ var icons = [
     tags: boxTags,
   },
   {
-    name: "Add Box",
+    name: "Boxes Error",
+    src: "boxes/boxes_exclaim",
+    tags: ["boxes", "box", "layout", "block", "blocks", "add", "new", "error", 'exclaim'],
+  },
+  {
+    name: "Boxes X",
+    src: "boxes/boxes_x",
+    tags: ["boxes", "box", "layout", "block", "blocks", "add", "new", "x"],
+  },
+  {
+    name: "Boxes Minus",
+    src: "boxes/boxes_minus",
+    tags: ["boxes", "box", "layout", "block", "blocks", "add", "new", "minus"],
+  },
+  {
+    name: "Boxes Plus",
     src: "boxes/box_add",
     tags: ["boxes", "box", "layout", "block", "blocks", "add", "new", "plus"],
   },
@@ -519,6 +585,11 @@ var icons = [
   {
     name: "Circle",
     src: "circle",
+    tags: ["circle", "circular"],
+  },
+  {
+    name: "Circle Circle",
+    src: "circle_circle_fill",
     tags: ["circle", "circular"],
   },
   {

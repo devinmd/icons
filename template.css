@@ -76,12 +76,11 @@ body {
 
 .box {
   background-color: var(--bg3);
-  box-shadow: 0 0 0 1px var(--bg1);
+  box-shadow: 0 0 4px 0 var(--bg1);
   border: 1px solid transparent;
   border-radius: 8px;
   padding: 16px;
   vertical-align: top;
-  border-top: 1px solid var(--bg4);
 }
 
 .box.highlight {
@@ -96,7 +95,6 @@ body {
   align-items: center;
   padding: 0 8px 1px 8px;
   column-gap: 0.3em;
-  border: 1px solid transparent;
 }
 
 .box-title {
@@ -107,7 +105,6 @@ body {
   flex-direction: row;
   align-items: center;
 }
-
 
 .box-heading {
   color: var(--text2);
@@ -175,8 +172,9 @@ body {
   color: var(--text3);
   display: block;
   width: auto;
+  white-space: nowrap;
   border-radius: 8px;
-  overflow-x: scroll;
+  overflow-x: auto;
   font-family: consolas;
 }
 

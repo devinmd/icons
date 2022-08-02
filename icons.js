@@ -30,7 +30,7 @@ function init() {
 // generate icon box from icon list
 function generate(icon) {
   let div = createElement("div", { class: "svgbox box" });
-  let img = createElement("img", { src: `../svgs/${icon.src}.svg` });
+  let img = createElement("img", { src: `./svgs/${icon.src}.svg` });
   let name = createElement("p", { innerhtml: icon.name });
   div.append(img);
   div.append(name);
