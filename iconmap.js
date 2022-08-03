@@ -423,19 +423,24 @@ var icons = [
     tags: ["star", "asterisk"],
   },
   {
-    name: "Dot Grid",
-    src: "dot_grid",
-    tags: ['circles', 'circle', 'round', 'dots'],
+    name: "Dot",
+    src: "dot",
+    tags: ['circle', 'circle', 'round', 'dot', 'dots'],
   },
   {
-    name: "Present",
+    name: "Dot Grid",
+    src: "dot_grid",
+    tags: ['circles', 'circle', 'round', 'dots', 'dot'],
+  },
+  {
+    name: "Gift Box",
     src: "present",
     tags: ['gift', 'present', 'box'],
   },
   {
     name: "Dots",
     src: "dots",
-    tags: ['circles', 'circle', 'round', 'dots'],
+    tags: ['circles', 'circle', 'round', 'dots', 'dot'],
   },
   {
     name: "Circles",
