@@ -1,19 +1,20 @@
-var batteryTags = [
-  "power",
-  "charge",
-  "battery",
-  "electronnic",
-  "electricity",
-  "energy",
-  "charger",
-  "charging",
-];
+var batteryTags = ["power", "charge", "battery", "electronnic", "electricity", "energy", "charger", "charging"];
 
 var boxTags = ["boxes", "box", "layout", "block", "blocks"];
 
 var gridTags = ["grid", "split", "layout", "row", "column", "sheet", "chart"];
 
 var icons = [
+  {
+    name: "Lock",
+    src: "lock",
+    tags: ["lock", "unlock", "padlock"],
+  },
+  {
+    name: "Unlock",
+    src: "unlock",
+    tags: ["lock", "unlock", "padlock"],
+  },
   {
     name: "CPU",
     src: "cpu",
@@ -23,15 +24,7 @@ var icons = [
   {
     name: "GPU",
     src: "gpu",
-    tags: [
-      "gpu",
-      "computer",
-      "pc",
-      "electronics",
-      "processing",
-      "graphics",
-      "graphical",
-    ],
+    tags: ["gpu", "computer", "pc", "electronics", "processing", "graphics", "graphical"],
   },
   {
     name: "Monitor",
@@ -95,66 +88,18 @@ var icons = [
   },
   {
     name: "Code",
-    src: "code2",
-    tags: [
-      "programming",
-      "coding",
-      "develop",
-      "developing",
-      "developer",
-      "code",
-      "programmer",
-    ],
+    src: "boxed/code_box",
+    tags: ["programming", "coding", "develop", "developing", "developer", "code", "programmer", 'boxed', 'box'],
   },
   {
     name: "Code",
     src: "code1",
-    tags: [
-      "programming",
-      "coding",
-      "develop",
-      "developing",
-      "developer",
-      "code",
-      "programmer",
-    ],
+    tags: ["programming", "coding", "develop", "developing", "developer", "code", "programmer"],
   },
   {
     name: "Code",
     src: "code",
-    tags: [
-      "programming",
-      "coding",
-      "develop",
-      "developing",
-      "developer",
-      "code",
-      "programmer",
-    ],
-  },
-  {
-    name: "Bug Circle",
-    src: "bug_circle",
-    tags: [
-      "bug",
-      "insect",
-      "circle",
-      "circular",
-      "programming",
-      "debug",
-      "code",
-      "debugging",
-      "critter",
-      "roach",
-      "beetle",
-      "coding",
-      "develop",
-      "developing",
-      "developer",
-      "programmer",
-      "issue",
-      "problem",
-    ],
+    tags: ["programming", "coding", "develop", "developing", "developer", "code", "programmer"],
   },
   {
     name: "Phone",
@@ -209,19 +154,8 @@ var icons = [
   },
   {
     name: "X Circle",
-    src: "x_circle",
-    tags: [
-      "x",
-      "close",
-      "exit",
-      "cross",
-      "no",
-      "cancel",
-      "none",
-      "error",
-      "circular",
-      "circle",
-    ],
+    src: "circular/x_circle",
+    tags: ["x", "close", "exit", "cross", "no", "cancel", "none", "error", "circular", "circle"],
   },
   {
     name: "App Window",
@@ -356,19 +290,7 @@ var icons = [
   {
     name: "Mouse",
     src: "mouse",
-    tags: [
-      "mouse",
-      "pointer",
-      "click",
-      "device",
-      "computer",
-      "peripheral",
-      "pc",
-      "button",
-      "input",
-      "cursor",
-      "point",
-    ],
+    tags: ["mouse", "pointer", "click", "device", "computer", "peripheral", "pc", "button", "input", "cursor", "point"],
   },
   {
     name: "Folder",
@@ -413,8 +335,13 @@ var icons = [
   },
 
   {
+    name: "Check Circle",
+    src: "circular/check_circle",
+    tags: ["complete", "done", "finished", "check", "confirm", "check", "circle", "circular"],
+  },
+  {
     name: "Plus Circle",
-    src: "plus_circle",
+    src: "circular/plus_circle",
     tags: ["plus", "add", "new", "circle", "circular"],
   },
   {
@@ -424,38 +351,38 @@ var icons = [
   },
   {
     name: "Dot",
-    src: "dot",
-    tags: ['circle', 'circle', 'round', 'dot', 'dots'],
+    src: "dots/dot",
+    tags: ["circle", "circle", "round", "dot", "dots"],
   },
   {
     name: "Dot Grid",
-    src: "dot_grid",
-    tags: ['circles', 'circle', 'round', 'dots', 'dot'],
+    src: "dots/dot_grid",
+    tags: ["circles", "circle", "round", "dots", "dot"],
   },
   {
     name: "Gift Box",
     src: "present",
-    tags: ['gift', 'present', 'box'],
+    tags: ["gift", "present", "box"],
   },
   {
     name: "Dots",
-    src: "dots",
-    tags: ['circles', 'circle', 'round', 'dots', 'dot'],
+    src: "dots/dots",
+    tags: ["circles", "circle", "round", "dots", "dot"],
   },
   {
     name: "Circles",
     src: "circles",
-    tags: ['circles', 'circle', 'round'],
+    tags: ["circles", "circle", "round"],
   },
   {
     name: "Box",
-    src: "box",
-    tags: ["box", "cube", "area", "empty", "block", "blocks", "boxes"],
+    src: "boxed/box",
+    tags: ["box", "cube", "area", "empty", "block", "blocks", "boxed"],
   },
   {
-    name: "Boxes Diagonal",
+    name: "Diamond",
     src: "boxes/boxes_diagonal",
-    tags: boxTags,
+    tags: ["box", "game", "games", "random", "shapes", "items", "blocks", "things", "block", "diamond", "square"],
   },
   {
     name: "Boxes",
@@ -469,23 +396,19 @@ var icons = [
   },
   {
     name: "Boxes",
-    src: "boxes/boxes3_1",
+    src: "boxes/boxes3_2",
     tags: boxTags,
   },
   {
-    name: "Boxes Error",
-    src: "boxes/boxes_exclaim",
-    tags: ["boxes", "box", "layout", "block", "blocks", "add", "new", "error", 'exclaim'],
+    name: "Boxes",
+    src: "boxes/boxes3_1",
+    tags: boxTags,
   },
+
   {
     name: "Boxes X",
     src: "boxes/boxes_x",
     tags: ["boxes", "box", "layout", "block", "blocks", "add", "new", "x"],
-  },
-  {
-    name: "Boxes Minus",
-    src: "boxes/boxes_minus",
-    tags: ["boxes", "box", "layout", "block", "blocks", "add", "new", "minus"],
   },
   {
     name: "Boxes Plus",
@@ -599,32 +522,32 @@ var icons = [
   },
   {
     name: "Circle",
-    src: "circle",
+    src: "circular/circle",
     tags: ["circle", "circular"],
   },
   {
     name: "Circle Circle",
-    src: "circle_circle_fill",
+    src: "circular/circle_circle_fill",
     tags: ["circle", "circular"],
   },
   {
     name: "Circle Circle",
-    src: "circle_circle",
+    src: "circular/circle_circle",
     tags: ["circle", "circular"],
   },
   {
     name: "Square Circle",
-    src: "square_circle",
+    src: "circular/square_circle",
     tags: ["circle", "circular", "square"],
   },
   {
     name: "Square Circle",
-    src: "square_circle1",
+    src: "circular/square_circle1",
     tags: ["circle", "circular", "square"],
   },
   {
     name: "Play Circle",
-    src: "play_circle",
+    src: "circular/play_circle",
     tags: ["circle", "play", "media", "video", "circular"],
   },
   {
@@ -675,6 +598,32 @@ var icons = [
   {
     name: "Text",
     src: "text/text",
-    tags: ["text", "words", "type", "typing"],
+    tags: ["text", "words"],
+  },
+
+  {
+    name: "Trash",
+    src: "trash",
+    tags: ["trash", "garbage", "delete", "remove"],
+  },
+  {
+    name: "Divider Box",
+    src: "boxed/divider",
+    tags: ["divider", "box", "boxed"],
+  },
+  {
+    name: "Heading Text Box",
+    src: "text/text_box_heading",
+    tags: ["text", "words", "box", "boxed", "heading", "header"],
+  },
+  {
+    name: "Plus Box",
+    src: "boxed/plus_box",
+    tags: ["plus", "new", "add", "boxed"],
+  },
+  {
+    name: "Text Box",
+    src: "text/text_box",
+    tags: ["text", "words", "box", "boxed"],
   },
 ];

@@ -1,10 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 400 400" stroke='#009966' stroke-width="36px" stroke-linecap="round" stroke-linejoin="round" fill="none">
-
-  
-<rect x="18" y="83.977" width="364" height="232.047" rx="36" ry="36"></rect>
-<path d="M 34.338 155.258 L 367.461 155.195" transform="matrix(0.999995, -0.00303, 0.00303, 0.999995, -0.469414, 0.609438)"></path>
-<rect x="194.264" y="-244" width="117.951" height="0.1" rx="0.1" ry="0.1" style="" transform="matrix(1, 0, 0, -1, 0, 0)"></rect>
-<rect x="89.895" y="244" width="36.008" height="0.224" rx="0.1" ry="0.1" style=""></rect>
-
-
+<svg width="400" height="400" viewBox="0 0 400 400" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M346 83.9771H54C34.1177 83.9771 18 100.095 18 119.977V280.024C18 299.906 34.1177 316.024 54 316.024H346C365.882 316.024 382 299.906 382 280.024V119.977C382 100.095 365.882 83.9771 346 83.9771Z" stroke="#009966" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M34.3388 155.763L367.46 154.69" stroke="#009966" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M205.851 235.1H88.1C88.0448 235.1 88 235.078 88 235.05C88 235.022 88.0448 235 88.1 235H205.851C205.906 235 205.951 235.022 205.951 235.05C205.951 235.078 205.906 235.1 205.851 235.1Z" stroke="#009966" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M308.908 235H273.1C273.045 235 273 235.045 273 235.1V235.124C273 235.179 273.045 235.224 273.1 235.224H308.908C308.963 235.224 309.008 235.179 309.008 235.124V235.1C309.008 235.045 308.963 235 308.908 235Z" stroke="#009966" stroke-width="36" stroke-linecap="round" stroke-linejoin="round"/>
 </svg>

@@ -60,8 +60,7 @@ body {
 #sidenav {
   background-color: var(--bg1);
   height: 100%;
-  padding: var(--topnavheight) var(--sidenavpadding) var(--sidenavpadding)
-    var(--sidenavpadding);
+  padding: var(--topnavheight) var(--sidenavpadding) var(--sidenavpadding) var(--sidenavpadding);
   width: var(--sidenavwidth);
   position: fixed;
 }
@@ -90,10 +89,10 @@ body {
 
 .tag {
   display: inline-flex;
-  font-size: 14px;
   border-radius: 14px;
+  font-size: 14px;
   align-items: center;
-  padding: 0 8px 1px 8px;
+  padding: 2px 8px 2px 8px;
   column-gap: 0.3em;
 }
 
@@ -155,8 +154,8 @@ body {
 
 .icon-tag {
   vertical-align: text-bottom;
-  height: 0.75em;
-  width: 0.75em;
+  height: 1em;
+  width: 1em;
 }
 .flex-container {
   display: flex;
