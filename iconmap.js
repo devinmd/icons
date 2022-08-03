@@ -313,6 +313,16 @@ var icons = [
 
   {
     name: "Caret Down",
+    src: "arrows/caretDown1",
+    tags: ["caret", "arrow"],
+  },
+  {
+    name: "Caret Right",
+    src: "arrows/caretRight1",
+    tags: ["caret", "arrow"],
+  },
+  {
+    name: "Caret Down",
     src: "arrows/caretDown",
     tags: ["caret", "arrow"],
   },
