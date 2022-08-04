@@ -2,6 +2,7 @@
 var iconcontainer = document.querySelector("#iconcontainer");
 
 function init() {
+  icons = icons.concat(arrows, battery, boxed, boxes, circular, computer, dots, file_folder, grid, text, unsorted)
   // sort icons list
   icons.sort(function (a, b) {
     var textA = a.name.toUpperCase();
