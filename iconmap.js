@@ -1,8 +1,6 @@
 //
-var icons = []
+var icons = [];
 //
-
-
 
 //
 // arrows
@@ -49,33 +47,36 @@ var battery = [
 //
 // boxed icons
 var boxed = [
-  { name: "Divider", src: "boxed/divider_box", tags: ["boxed", "box", "block", "text", "divider"] },
-  { name: "Heading", src: "boxed/heading_box", tags: ["boxed", "box", "block", "text", "heading"] },
+  { name: "Divider", src: "boxed/divider_box", tags: ["boxed", "box", "text", "divider"] },
+  { name: "Heading", src: "boxed/heading_box", tags: ["boxed", "box", "text", "heading"] },
   { name: "Text", src: "boxed/text_box", tags: ["boxed", "box", "text"] },
-  { name: "Code", src: "boxed/code_box", tags: ["boxed", "box", "block", "code", "terminal"] },
-  { name: "Plus", src: "boxed/plus_box", tags: ["boxed", "box", "block", "plus", "new", "add"] },
-  { name: "Check", src: "boxed/check_box", tags: ["boxed", "box", "block",'check','complete','ok','good','yes','confirm'] },
-  { name: "Image", src: "boxed/image_box", tags: ["boxed", "box", "block",'image','media'] },
-  { name: "Box", src: "boxed/box", tags: ["boxed", "box", "block"] },
-
+  { name: "Code", src: "boxed/code_box", tags: ["boxed", "box", "code", "terminal"] },
+  { name: "Plus", src: "boxed/plus_box", tags: ["boxed", "box", "plus", "new", "add"] },
+  {
+    name: "Check",
+    src: "boxed/check_box",
+    tags: ["boxed", "box", "check", "complete", "ok", "good", "yes", "confirm", "correct"],
+  },
+  { name: "Image", src: "boxed/image_box", tags: ["boxed", "box", "image", "media"] },
+  { name: "Box", src: "boxed/box", tags: ["boxed", "box"] },
 ];
 
 //
 // box icons
 var boxes = [
-  { name: "Boxes", src: "boxes/boxes_four", tags: ["boxes", "box", "block", "layout"] },
-  { name: "Boxes Plus", src: "boxes/boxes_plus", tags: ["boxes", "box", "block", "layout", "plus", "add", "new"] },
-  { name: "Boxes", src: "boxes/boxes_three", tags: ["boxes", "box", "block", "layout"] },
-  { name: "Boxes", src: "boxes/boxes_three_1", tags: ["boxes", "box", "block", "layout"] },
-  { name: "Boxes", src: "boxes/boxes_three_2", tags: ["boxes", "box", "block", "layout"] },
-  { name: "Boxes", src: "boxes/boxes_three_3", tags: ["boxes", "box", "block", "layout"] },
-  { name: "Boxes", src: "boxes/boxes_three_4", tags: ["boxes", "box", "block", "layout"] },
-  { name: "Boxes", src: "boxes/boxes_two", tags: ["boxes", "box", "block", "layout"] },
-  { name: "Boxes", src: "boxes/boxes_two_1", tags: ["boxes", "box", "block", "layout"] },
+  { name: "Boxes", src: "boxes/boxes_four", tags: ["boxes", "box", "layout"] },
+  { name: "Boxes Plus", src: "boxes/boxes_plus", tags: ["boxes", "box", "layout", "plus", "add", "new"] },
+  { name: "Boxes", src: "boxes/boxes_three", tags: ["boxes", "box", "layout"] },
+  { name: "Boxes", src: "boxes/boxes_three_1", tags: ["boxes", "box", "layout"] },
+  { name: "Boxes", src: "boxes/boxes_three_2", tags: ["boxes", "box", "layout"] },
+  { name: "Boxes", src: "boxes/boxes_three_3", tags: ["boxes", "box", "layout"] },
+  { name: "Boxes", src: "boxes/boxes_three_4", tags: ["boxes", "box", "layout"] },
+  { name: "Boxes", src: "boxes/boxes_two", tags: ["boxes", "box", "layout"] },
+  { name: "Boxes", src: "boxes/boxes_two_1", tags: ["boxes", "box", "layout"] },
   {
     name: "Boxes X",
     src: "boxes/boxes_x",
-    tags: ["boxes", "box", "block", "layout", "x", "delete", "remove", "cancel"],
+    tags: ["boxes", "box", "layout", "x", "delete", "remove", "cancel"],
   },
 ];
 
@@ -86,7 +87,7 @@ var circular = [
   {
     name: "Check Circle",
     src: "circular/check_circle",
-    tags: ["circle", "circular", "check", "yes", "ok", "confirm", "correct", "round"],
+    tags: ["circle", "circular", "check", "complete", "ok", "good", "yes", "confirm", "correct", "round"],
   },
   { name: "Circle ", src: "circular/circle", tags: ["circle", "circular", "round"] },
   { name: "Circe Circle", src: "circular/circle_circle", tags: ["circle", "circular", "round"] },
@@ -132,6 +133,9 @@ var dots = [
 var file_folder = [
   { name: "File", src: "file_folder/file", tags: ["file", "document"] },
   { name: "File Plus", src: "file_folder/file_plus", tags: ["file", "new", "add", "document", "plus"] },
+  { name: "File Up", src: "file_folder/file_up", tags: ["file", "new", "upload", "up"] },
+  { name: "File Check", src: "file_folder/file_check", tags: ["file", "check", "yes", "confirm", "correct", 'ok', 'good'] },
+
   { name: "File Text", src: "file_folder/file_text", tags: ["file", "document", "text"] },
   { name: "Folder", src: "file_folder/folder", tags: ["folder"] },
   { name: "Folder Plus", src: "file_folder/folder_plus", tags: ["folder", "new", "add", "plus"] },
@@ -306,12 +310,17 @@ var unsorted = [
   {
     name: "Unlock",
     src: "unlock",
-    tags: ["lock", "unlock",'padlock'],
+    tags: ["lock", "unlock", "padlock"],
+  },
+  {
+    name: "Lock Small",
+    src: "lock_small",
+    tags: ["lock", "unlock", "padlock"],
   },
   {
     name: "User",
     src: "user",
-    tags: ["person", "account",'user'],
+    tags: ["person", "account", "user"],
   },
   {
     name: "Video",
@@ -321,14 +330,15 @@ var unsorted = [
   {
     name: "X",
     src: "x",
-    tags: ["x", "cancel",'delete','remove'],
+    tags: ["x", "cancel", "delete", "remove"],
+  },
+
+  {
+    name: "Check",
+    src: "check",
+    tags: ["check", "complete", "ok", "good", "yes", "confirm", "correct"],
   },
   /*
-  {
-    name: "",
-    src: "",
-    tags: ["", ""],
-  },
   {
     name: "",
     src: "",
