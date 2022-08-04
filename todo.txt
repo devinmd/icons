@@ -1,25 +1,7 @@
 scrolling to hash on hash change
 scrolling to hash on load
 
-convert icons to 48px border radius
-
-svgs
-- new account icon
-- check
-- 3d cube
-- settings gear
-- wifi
-- warning triangle
-- corners
-- border
-- minimize & maximize
-- diagonal arrows
-- terminal
-- trash
-
-circles
-- account
-- check
-
+fix svgs
+present
 
 circular svgs - 44px diagonal to border

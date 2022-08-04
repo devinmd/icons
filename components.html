@@ -34,100 +34,70 @@
     <div id="content">
       <div class="flex-container col-2">
 
-        <p class="heading">Components</p>
-        <a href="#colors" class="subheading">Colors</a>
-        <a href="#boxes" class="subheading">Boxes</a>
-
-        <div class="box">
-          <div class="box-title">
-            <div class="icon-circular green" style="background-image: url('./assets/boxes1.svg')"></div>Box
-          </div>
-          <p class="box-text">this is a box with a title, text, and a title icon.</p>
-          <div class="box-codeblock">
-            &lt;div class="box"&gt;<br />
-            &nbsp;&nbsp;&lt;div class="box-title"&gt;<br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&lt;div<br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;class="icon-circular green"<br />
-            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;style="background-image:
-            url('icon.svg')"<br />&nbsp;&nbsp;&nbsp;&nbsp;&gt;&lt;/div&gt;<br />
-            &nbsp;&nbsp;&nbsp;&nbsp;Box<br />&nbsp;&nbsp;&lt;/div&gt;<br />
-            &nbsp;&nbsp;&lt;p class="box-text"&gt;text&lt;/p&gt;<br />
-            &lt;/div&gt;
-          </div>
-        </div>
-        <a href="#icons" class="subheading">Icons</a>
-        <div class="box">
-          <div class="box-title">
-            <div class="icon-circular green" style="background-image: url('./assets/circle1.svg')"></div>Circular Icons
-          </div>
-          <p class="box-text">Padded circular icons</p>
-          <div class="icon-circular green" style="background-image: url('./assets/shapes1.svg')"></div>
-          <div class="icon-circular red" style="background-image: url('./assets/house1.svg')"></div>
-          <div class="icon-circular yellow" style="background-image: url('./assets/folder.svg')"></div>
-          <div class="icon-circular blue" style="background-image: url('./assets/shapes1.svg')"></div>
-          <p class="box-codeblock">
-            &lt;div<br>&nbsp;&nbsp;class="icon-circular green"<br>&nbsp;&nbsp;style="background-image: url('icon.svg')"<br>&gt;&lt;/div&gt;
-          </p>
-        </div>
+        <p class="heading">Components</p>      
         <a href="#tags" class="subheading">Tags</a>
         <div class="box">
           <div class="box-title">
             <div class="icon-circular green" style="background-image: url('./assets/oval1.svg')"></div>Tag
           </div>
           <p class="box-heading">Default</p>
-          <p class="box-text">Use font size to change size.</p>
+          <p class="box-text">Use font size to change tag size</p>
+          <p class="box-text">Default is 12px</p>
           <p class="tag green">Tag Green</p>
-          <p class="tag red" style="font-size: 16px;">Tag Red</p>
-          <p class="tag yellow" style="font-size: 18px;">Tag Yellow</p>
-          <p class="tag blue" style="font-size: 20px;">Tag Blue</p>
+          <p class="tag red" style="font-size: 12px;">Tag Red</p>
+          <p class="tag yellow" style="font-size: 14px;">Tag Yellow</p>
+          <p class="tag blue" style="font-size: 14px;">Tag Blue</p>
           <p class="box-codeblock">
-            &lt;p class="tag green" style="font-size: 14px;"&gt;Tag&lt;/p&gt;
+            &lt;p class="tag green"&gt;Tag&lt;/p&gt;
           </p>
           <p class="box-heading">Border</p>
-          <p class="box-text">Use the border class.</p>
+          <p class="box-text">Use the border class to add a border</p>
           <p class="tag green border">Tag Green</p>
-          <p class="tag red border" style="font-size: 16px;">Tag Red</p>
-          <p class="tag yellow border" style="font-size: 18px;">Tag Yellow</p>
-          <p class="tag blue border" style="font-size: 20px;">Tag Blue</p>
+          <p class="tag red border" style="font-size: 12px;">Tag Red</p>
+          <p class="tag yellow border" style="font-size: 14px;">Tag Yellow</p>
+          <p class="tag blue border" style="font-size: 14px;">Tag Blue</p>
           <p class="box-codeblock">
-            &lt;p class="tag green border" style="font-size: 14px;"&gt;Tag&lt;/p&gt;
+            &lt;p class="tag green border"&gt;Tag&lt;/p&gt;
           </p>
           <p class="box-heading">Icon</p>
-          <p class="box-text">Use an img element with the class icon-tag and set the src attribute to your<br>image.</p>
-          <p class="box-text">You can move the img to wherever you want inside of the tag content.</p>
+          <p class="box-text">Add an icon inside of your tag with tag-icon</p>
           <p class="tag green">
-            <img class="icon-tag" src="./assets/plus_circle.svg" />Plus
+            <img class="tag-icon" src="./assets/check_circle.svg" />Confirmed
           </p>
-          <p class="tag red" style="font-size: 16px;">
-            <img class="icon-tag" src="./assets/x_circle.svg" />Delete
+          <p class="tag red" style="font-size: 12px;">
+            <img class="tag-icon" src="./assets/x_circle.svg" />Deleted
           </p>
-          <p class="tag yellow" style="font-size: 18px;">
-            <img class="icon-tag" src="./assets/foldercolor.svg" />Folder
+          <p class="tag yellow" style="font-size: 14px;">
+            <img class="tag-icon" src="./assets/foldercolor.svg" />Folder
           </p>
-          <p class="tag blue" style="font-size: 20px;">
-            <img class="icon-tag" src="./assets/user.svg" />Account
-          </p>
-          <p class="box-codeblock">
-            &lt;p class="tag green" style="font-size: 14px;"&gt;<br />&nbsp;&nbsp;&lt;img
-            class="icon-tag" src="icon.svg" /&gt;<br />&nbsp;&nbsp;Tag<br />&lt;/p&gt;
-          </p>
-          <p class="box-heading">Border & Icon</p>
-          <p class="box-text">Border class and an icon on the right.</p>
-          <p class="tag green border">Check
-            <img class="icon-tag" src="./assets/check_circle.svg" />
-          </p>
-          <p class="tag red border" style="font-size: 16px;">Delete
-            <img class="icon-tag" src="./assets/x_circle.svg" />
-          </p>
-          <p class="tag yellow border" style="font-size: 18px;">Folder
-            <img class="icon-tag" src="./assets/foldercolor.svg" />
-          </p>
-          <p class="tag blue border" style="font-size: 20px;">Account
-            <img class="icon-tag" src="./assets/user.svg" />
+          <p class="tag blue" style="font-size: 14px;">
+            <img class="tag-icon" src="./assets/arrow_circle.svg" />Moving
           </p>
           <p class="box-codeblock">
-            &lt;p class="tag green border" style="font-size: 14px;"&gt;<br />&nbsp;&nbsp;Tag<br />&nbsp;&nbsp;&lt;img
-            class="icon-tag" src="icon.svg" /&gt;<br>&lt;/p&gt;
+            &lt;p class="tag green"&gt;<br />&nbsp;&nbsp;&lt;img
+            class="tag-icon" src="icon.svg" /&gt;<br />&nbsp;&nbsp;Tag<br />&lt;/p&gt;
+          </p>
+          <p class="box-heading">CSS</p>
+          <p class="box-text">CSS for tags (no colors)</p>
+          <p class="box-codeblock">
+            .tag {<br>
+            &nbsp;&nbsp;display: inline-flex;<br>
+            &nbsp;&nbsp;border-radius: 14px;<br>
+            &nbsp;&nbsp;font-size: 12px;<br>
+            &nbsp;&nbsp;align-items: center;<br>
+            &nbsp;&nbsp;padding: 1px 8px 1px 8px;<br>
+            &nbsp;&nbsp;column-gap: 0.3em;<br>
+            &nbsp;&nbsp;background-color: backgroundcolor;<br>
+            &nbsp;&nbsp;color: maincolor;<br>
+            }<br><br>
+            .tag.border {<br>
+            &nbsp;&nbsp;border: 1px solid maincolor;<br>
+            }<br><br>
+            .tag-icon {<br>
+            &nbsp;&nbsp;vertical-align: text-bottom;<br>
+            &nbsp;&nbsp;height: 1em;<br>
+            &nbsp;&nbsp;width: 1em;<br>
+            }
           </p>
         </div>
       </div>

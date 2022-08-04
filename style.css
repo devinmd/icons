@@ -1,3 +1,63 @@
+@font-face {
+  font-family: "consolas";
+  src: url("./assets/consolas.ttf");
+}
+
+#app {
+  height: 100%;
+}
+
+#topnav {
+  height: var(--topnavheight);
+  background-color: var(--bg1);
+}
+
+#sidenav {
+  background-color: var(--bg1);
+  height: 100%;
+  padding: var(--topnavheight) var(--sidenavpadding) var(--sidenavpadding) var(--sidenavpadding);
+  width: var(--sidenavwidth);
+  position: fixed;
+}
+
+#content {
+  height: 100%;
+  gap: 16px;
+  padding: 32px;
+  background-color: var(--bg2);
+  margin-left: calc(var(--sidenavwidth) + var(--sidenavpadding) * 2);
+}
+
+.box {
+  background-color: var(--bg3);
+  box-shadow: 0 0 4px 0 var(--bg1);
+  border: 1px solid transparent;
+  border-radius: 8px;
+  padding: 16px;
+  vertical-align: top;
+}
+
+.box-title {
+  color: var(--text4);
+  font-size: 20px;
+  display: flex;
+  column-gap: 10px;
+  flex-direction: row;
+  align-items: center;
+}
+
+.box-heading {
+  color: var(--text3);
+  font-size: 18px;
+  margin: 16px 0 0 0;
+}
+.box-text {
+  color: var(--text2);
+  font-size: 16px;
+  margin: 8px 0 8px 0;
+}
+
+
 #iconcontainer {
   width: 100%;
   flex-wrap: wrap;
@@ -88,3 +148,72 @@
   margin-right: 8px;
   transform: translateY(2px);
 }
+
+.flex-container {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.box-codeblock {
+  background-color: var(--bg2);
+  margin: 8px 0 12px 0;
+  padding: 12px 16px 12px 16px;
+  color: var(--text3);
+  display: block;
+  width: auto;
+  white-space: nowrap;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: consolas;
+}
+
+.heading {
+  font-size: 32px;
+  font-weight: bold;
+  color: var(--text4);
+  width: 100%;
+}
+
+.subheading {
+  font-size: 26px;
+  font-weight: bold;
+  text-decoration: none;
+  color: var(--text3);
+  margin: 8px 0 0 0;
+  width: 100%;
+}
+
+a.subheading:hover {
+  /* if the subheading is a link */
+  text-decoration: underline;
+}
+
+.icon-circular {
+  height: 32px;
+  width: 32px;
+  background-position: center;
+  background-size: 18px 18px;
+  vertical-align: middle;
+  display: inline-block;
+  background-repeat: no-repeat;
+  border-radius: 50%;
+}
+
+.icon-circular.green {
+  background-color: var(--green);
+}
+
+.icon-circular.red {
+  background-color: var(--red);
+}
+
+.icon-circular.yellow {
+  background-color: var(--yellow);
+}
+
+.icon-circular.blue {
+  background-color: var(--blue);
+}
+
