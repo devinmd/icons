@@ -3,5 +3,9 @@ scrolling to hash on load
 
 fix svgs
 present
+divider box
+heading box
+text box
+
 
 circular svgs - 44px diagonal to border

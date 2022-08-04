@@ -54,7 +54,10 @@ var boxed = [
   { name: "Text", src: "boxed/text_box", tags: ["boxed", "box", "text"] },
   { name: "Code", src: "boxed/code_box", tags: ["boxed", "box", "block", "code", "terminal"] },
   { name: "Plus", src: "boxed/plus_box", tags: ["boxed", "box", "block", "plus", "new", "add"] },
+  { name: "Check", src: "boxed/check_box", tags: ["boxed", "box", "block",'check','complete','ok','good','yes','confirm'] },
+  { name: "Image", src: "boxed/image_box", tags: ["boxed", "box", "block",'image','media'] },
   { name: "Box", src: "boxed/box", tags: ["boxed", "box", "block"] },
+
 ];
 
 //
@@ -246,6 +249,11 @@ var unsorted = [
     name: "Oval",
     src: "oval",
     tags: ["object", "shape", "oval", "round"],
+  },
+  {
+    name: "Pen Disabled",
+    src: "pen_no",
+    tags: ["pen", "write", "edit"],
   },
   {
     name: "Pen",
