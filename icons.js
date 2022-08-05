@@ -2,7 +2,7 @@
 var iconcontainer = document.querySelector("#iconcontainer");
 
 function init() {
-  icons = icons.concat(arrows, battery, boxed, boxes, circular, computer, dots, file_folder, grid, text, unsorted)
+  icons = icons.concat(arrows, battery, boxed, boxes, circular, computer, dots, file_folder, grid, align, unsorted);
   // sort icons list
   icons.sort(function (a, b) {
     var textA = a.name.toUpperCase();
@@ -70,16 +70,7 @@ function iconSearch(query) {
             if (icons[i]["tags"][t].includes(queryArr[q])) {
               generate(icons[i]);
               count += 1;
-              console.log(
-                count +
-                  ' - "' +
-                  query +
-                  '" : ' +
-                  icons[i]["tags"][t] +
-                  " (" +
-                  icons[i]["name"] +
-                  ")"
-              );
+              console.log(count + ' - "' + query + '" : ' + icons[i]["tags"][t] + " (" + icons[i]["name"] + ")");
 
               // break out of both loops to not get duplicate icons
               break eachtag;
@@ -90,14 +81,7 @@ function iconSearch(query) {
     }
   }
   console.log(query);
-  document.querySelector("#iconCount").innerHTML =
-    query == ""
-      ? count + " Icons"
-      : count +
-        (count == 1 ? " Icon" : " Icons") +
-        ' Matching "' +
-        query.replace(/,/g, '", "') +
-        '"';
+  document.querySelector("#iconCount").innerHTML = query == "" ? count + " Icons" : count + (count == 1 ? " Icon" : " Icons") + ' Matching "' + query.replace(/,/g, '", "') + '"';
 }
 
 document.addEventListener("keyup", function (e) {
