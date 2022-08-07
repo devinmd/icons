@@ -1,6 +1,38 @@
 scrolling to hash on hash change
 scrolling to hash on load
 
+icons
+data bars
+pin
+3d cube
+rotate
+arrow from line
+message
+notification
+finger id
+bell
+book
+upload
+undo
+bookmark
+calendar
+camera
+cctv camera
+star
+heart
+2x3 box grid
+database
+hard drive
+server
+3x3 box grid
+fast forward/skip
+volume
+brightness
+moon
+sun
+light / dark mode
+
+
 fix svgs
 align text
 

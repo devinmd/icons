@@ -12,6 +12,7 @@ var arrows = [
   { name: "Arrows Down", src: "arrows/arrows_down_1", tags: ["arrow"] },
   { name: "Arrows Inward", src: "arrows/arrows_in", tags: ["arrow"] },
   { name: "Arrows Inward", src: "arrows/arrows_in_1", tags: ["arrow"] },
+  { name: "Arrows Inward", src: "arrows/arrows_in_2", tags: ["arrow"] },
   { name: "Arrows Up", src: "arrows/arrows_up", tags: ["arrow"] },
   { name: "Arrows Up", src: "arrows/arrows_up_1", tags: ["arrow"] },
   { name: "Arrows Right", src: "arrows/arrows_right", tags: ["arrow"] },
@@ -20,8 +21,11 @@ var arrows = [
   { name: "Arrows Left", src: "arrows/arrows_left_1", tags: ["arrow"] },
   { name: "Arrows Outward", src: "arrows/arrows_out", tags: ["arrow"] },
   { name: "Arrows Outward", src: "arrows/arrows_out_1", tags: ["arrow"] },
+  { name: "Arrows Outward", src: "arrows/arrows_out_2", tags: ["arrow"] },
   { name: "Arrows Left-Right", src: "arrows/arrows_left_right", tags: ["arrow"] },
+  { name: "Arrows Left-Right", src: "arrows/arrows_left_right_1", tags: ["arrow"] },
   { name: "Arrows Up-Down", src: "arrows/arrows_up_down", tags: ["arrow"] },
+  { name: "Arrows Up-Down", src: "arrows/arrows_up_down_1", tags: ["arrow"] },
   { name: "Caret Down", src: "arrows/caret_down", tags: ["arrow"] },
   { name: "Caret Down", src: "arrows/caret_down_1", tags: ["arrow"] },
   { name: "Caret Down", src: "arrows/caret_down_2", tags: ["arrow"] },
@@ -80,7 +84,7 @@ var boxes = [
 //
 // circular icons
 var circular = [
-  { name: "Arrow Circle", src: "circular/arrow_circle", tags: ["circular"] },
+  { name: "Arrow Circle", src: "circular/arrow_circle", tags: ["circular", "arrow"] },
   { name: "Check Circle", src: "circular/check_circle", tags: ["circular"] },
   { name: "Circle ", src: "circular/circle", tags: ["circular"] },
   { name: "Circe Circle", src: "circular/circle_circle", tags: ["circular"] },
@@ -101,8 +105,14 @@ var computer = [
   { name: "Monitor", src: "computer/monitor", tags: ["computer"] },
   { name: "Mouse", src: "computer/mouse", tags: ["computer"] },
   { name: "Phone", src: "computer/phone", tags: ["computer"] },
+  { name: "Phone", src: "computer/phone_1", tags: ["computer"] },
   { name: "RAM", src: "computer/ram", tags: ["computer"] },
   { name: "Speaker", src: "computer/speaker", tags: ["computer"] },
+  { name: "Laptop", src: "computer/laptop", tags: ["computer"] },
+  { name: "Server", src: "computer/computer", tags: ["computer"] },
+  { name: "Server", src: "computer/computer_1", tags: ["computer"] },
+  { name: "Servers", src: "computer/computers", tags: ["computer"] },
+  { name: "Servers", src: "computer/computers_1", tags: ["computer"] },
 ];
 
 //
@@ -152,21 +162,9 @@ var align = [
   { name: "Align Left", src: "align/align_left", tags: ["align"] },
   { name: "Align Right", src: "align/align_right", tags: ["align"] },
   { name: "Align Left", src: "align/align_left_1", tags: ["align"] },
-  {
-    name: "Align Right",
-    src: "align/align_right_1",
-    tags: ["align"],
-  },
-  {
-    name: "Align Top",
-    src: "align/align_top",
-    tags: ["align"],
-  },
-  {
-    name: "Align Bottom",
-    src: "align/align_bottom",
-    tags: ["align"],
-  },
+  { name: "Align Right", src: "align/align_right_1", tags: ["align"] },
+  { name: "Align Top", src: "align/align_top", tags: ["align"] },
+  { name: "Align Bottom", src: "align/align_bottom", tags: ["align"] },
 ];
 
 //
@@ -267,7 +265,20 @@ var unsorted = [
   {
     name: "Shapes",
     src: "shapes",
-    tags: ["shapes", "circle", "square", "diamond", "triangle", "random", "object", "items", "thing", "objects", "things", "shape"],
+    tags: [
+      "shapes",
+      "circle",
+      "square",
+      "diamond",
+      "triangle",
+      "random",
+      "object",
+      "items",
+      "thing",
+      "objects",
+      "things",
+      "shape",
+    ],
   },
   {
     name: "Slider",
