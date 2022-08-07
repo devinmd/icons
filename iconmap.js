@@ -64,6 +64,11 @@ var boxed = [
   { name: "List", src: "boxed/list", tags: ["boxed"] },
   { name: "List", src: "boxed/list_1", tags: ["boxed"] },
   { name: "Text", src: "boxed/text", tags: ["boxed"] },
+  { name: "X", src: "boxed/x", tags: ["boxed"] },
+  { name: "Arrow", src: "boxed/arrow_up", tags: ["boxed"] },
+  { name: "Plus", src: "boxed/plus", tags: ["boxed"] },
+  { name: "Arrow", src: "boxed/arrow_right", tags: ["boxed"] },
+
 ];
 
 //
