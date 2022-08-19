@@ -8,15 +8,23 @@ var arrows = [
   // arrows
   { name: "Arrow Right", src: "arrows/arrow_right", tags: ["arrow"] },
   { name: "Arrow Right", src: "arrows/arrow_right_long", tags: ["arrow"] },
+  { name: "Arrow Down", src: "arrows/arrow_down_line", tags: ["arrow"] },
+  { name: "Arrow Down", src: "arrows/arrow_down_line_1", tags: ["arrow"] },
   { name: "Arrows Down", src: "arrows/arrows_down", tags: ["arrow"] },
   { name: "Arrows Down", src: "arrows/arrows_down_1", tags: ["arrow"] },
   { name: "Arrows Inward", src: "arrows/arrows_in", tags: ["arrow"] },
   { name: "Arrows Inward", src: "arrows/arrows_in_1", tags: ["arrow"] },
   { name: "Arrows Inward", src: "arrows/arrows_in_2", tags: ["arrow"] },
+  { name: "Arrow Up", src: "arrows/arrow_up_line", tags: ["arrow"] },
+  { name: "Arrow Up", src: "arrows/arrow_up_line_1", tags: ["arrow"] },
   { name: "Arrows Up", src: "arrows/arrows_up", tags: ["arrow"] },
   { name: "Arrows Up", src: "arrows/arrows_up_1", tags: ["arrow"] },
+  { name: "Arrow Right", src: "arrows/arrow_right_line", tags: ["arrow"] },
+  { name: "Arrow Right", src: "arrows/arrow_right_line_1", tags: ["arrow"] },
   { name: "Arrows Right", src: "arrows/arrows_right", tags: ["arrow"] },
   { name: "Arrows Right", src: "arrows/arrows_right_1", tags: ["arrow"] },
+  { name: "Arrow Left", src: "arrows/arrow_left_line", tags: ["arrow"] },
+  { name: "Arrow Left", src: "arrows/arrow_left_line_1", tags: ["arrow"] },
   { name: "Arrows Left", src: "arrows/arrows_left", tags: ["arrow"] },
   { name: "Arrows Left", src: "arrows/arrows_left_1", tags: ["arrow"] },
   { name: "Arrows Outward", src: "arrows/arrows_out", tags: ["arrow"] },
@@ -68,7 +76,6 @@ var boxed = [
   { name: "Arrow", src: "boxed/arrow_up", tags: ["boxed"] },
   { name: "Plus", src: "boxed/plus", tags: ["boxed"] },
   { name: "Arrow", src: "boxed/arrow_right", tags: ["boxed"] },
-
 ];
 
 //
@@ -81,6 +88,7 @@ var boxes = [
   { name: "Boxes", src: "boxes/boxes_three_2", tags: ["boxes"] },
   { name: "Boxes", src: "boxes/boxes_three_3", tags: ["boxes"] },
   { name: "Boxes", src: "boxes/boxes_three_4", tags: ["boxes"] },
+  { name: "Boxes", src: "boxes/boxes_three_5", tags: ["boxes"] },
   { name: "Boxes", src: "boxes/boxes_two", tags: ["boxes"] },
   { name: "Boxes", src: "boxes/boxes_two_1", tags: ["boxes"] },
   { name: "Boxes X", src: "boxes/boxes_x", tags: ["boxes"] },
@@ -99,6 +107,9 @@ var circular = [
   { name: "Square Circle", src: "circular/square_circle", tags: ["circular"] },
   { name: "Square Circle", src: "circular/square_circle_1", tags: ["circular"] },
   { name: "X Circle", src: "circular/x_circle", tags: ["circular"] },
+  { name: "Clock", src: "circular/clock", tags: ["circular"] },
+  { name: "Half Filled", src: "circular/circle_half", tags: ["circular"] },
+  { name: "Half Filled", src: "circular/circle_half_1", tags: ["circular"] },
 ];
 
 //
@@ -196,11 +207,6 @@ var unsorted = [
     name: "Circles",
     src: "circles",
     tags: ["circles"],
-  },
-  {
-    name: "Clock",
-    src: "clock",
-    tags: ["clock", "time"],
   },
   {
     name: "Code",
@@ -326,15 +332,27 @@ var unsorted = [
     src: "check",
     tags: ["check", "complete", "ok", "good", "yes", "confirm", "correct"],
   },
-  /*
+
   {
-name: "",
-src: "",
-tags: ["", ""],
+    name: "Sun",
+    src: "sun",
+    tags: ["sun", "day", "light"],
   },
   {
-name: "",
-src: "",
-tags: ["", ""],
-  },*/
+    name: "Sun",
+    src: "sun_1",
+    tags: ["light", "sun", "day"],
+  },
+  {
+    name: "Moon",
+    src: "moon",
+    tags: ["dark", "moon", "night"],
+  },
+  { name: "Audio", src: "audio", tags: ["wave", "audio", "sound", "noise"] },
+  { name: "Lines", src: "lines", tags: ["lines"] },
+  {
+    name: "Lightning",
+    src: "lightning",
+    tags: ["lightning", "storm", "thunder", "strike", "electricity", "electric", "power", "energy"],
+  },
 ];
