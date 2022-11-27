@@ -339,6 +339,11 @@ var unsorted = [
     tags: ["sun", "day", "light"],
   },
   {
+    name: "Star",
+    src: "star",
+    tags: ["star"],
+  },
+  {
     name: "Sun",
     src: "sun_1",
     tags: ["light", "sun", "day"],
