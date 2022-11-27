@@ -143,6 +143,7 @@ var dots = [
 // file & folder icons
 var file_folder = [
   { name: "File", src: "file_folder/file", tags: ["file"] },
+  { name: "File Out", src: "file_folder/file_out", tags: ["file"] },
   { name: "File Plus", src: "file_folder/file_plus", tags: ["file"] },
   { name: "File Up", src: "file_folder/file_up", tags: ["file"] },
   {
@@ -355,6 +356,7 @@ var unsorted = [
   },
   { name: "Audio", src: "audio", tags: ["wave", "audio", "sound", "noise"] },
   { name: "Lines", src: "lines", tags: ["lines"] },
+  { name: "Line", src: "line", tags: ["line"] },
   {
     name: "Lightning",
     src: "lightning",
